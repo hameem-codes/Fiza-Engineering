@@ -125,7 +125,7 @@ export default function ArticlePage({ params }: Props) {
             <span>·</span>
             <span>{article.readingTime}</span>
           </div>
-          <h1 className="text-display-lg sm:text-[3rem] font-medium text-earth-black leading-[1.05] max-w-4xl mb-4">
+          <h1 className="text-display-lg sm:text-[3rem] font-medium text-earth-black leading-[1.08] max-w-4xl mb-4">
             {article.title}
           </h1>
           <div className="text-sm font-sans text-quarry-grey">

@@ -9,7 +9,8 @@ import {
   getVisibleAchievements,
 } from "@/lib/achievements";
 import { SITE_FACTS } from "@/lib/siteFacts";
-import { FileText, ExternalLink } from "lucide-react";
+import { FileText, ExternalLink, CheckCircle } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 function normalizeCategory(param: string | undefined): "ALL" | AchievementCategory {
   if (!param) return "ALL";
@@ -26,93 +27,101 @@ function AchievementCard({ item }: { item: Achievement }) {
   const isMilestone = item.isInternalMilestone || item.category === "Milestones";
 
   return (
-    <div className="relative group">
-      {/* Timeline indicator pin */}
-      <div className="absolute -left-[41px] md:-left-[73px] top-2 w-4 h-4 bg-earth-black group-hover:bg-oxide-red transition-colors" />
-
-      <div className="bg-iron-white border border-slab-grey p-6 md:p-8 max-w-3xl group-hover:border-earth-black transition-colors">
-        {/* Card Header: Category & Year */}
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <div className="flex items-center gap-2">
-            <span className="font-sans text-xs text-oxide-red uppercase tracking-wide font-semibold">
-              {item.category}
+    <article className="bg-iron-white border border-slab-grey p-8 md:p-9 flex flex-col justify-between transition-all duration-300 hover:border-earth-black hover:shadow-lg relative group">
+      <div>
+        {/* Top Header: Big Year / Metric + Authority Metadata (Matching Second Image Reference) */}
+        <div className="flex flex-col mb-5 pb-5 border-b border-slab-grey/60">
+          <div className="flex items-baseline justify-between mb-2">
+            <span className="font-heading text-4xl sm:text-5xl font-medium text-earth-black leading-none">
+              {item.year}
             </span>
-            {!item.verified && (
-              <span className="text-[10px] font-sans uppercase tracking-wide text-quarry-grey bg-[#EBE8E0] px-2 py-0.5 border border-slab-grey font-medium">
-                Pending Verification
+            <div className="flex items-center gap-1.5">
+              <span className="font-sans text-[11px] uppercase tracking-wider font-semibold px-2 py-0.5 bg-earth-black/5 text-earth-black border border-slab-grey/50">
+                {item.category}
               </span>
-            )}
-          </div>
-          <span className="font-sans text-xs text-earth-black font-bold">
-            {item.year}
-          </span>
-        </div>
-
-        {/* Title */}
-        <h3 className="text-heading-2 font-medium text-earth-black mb-2">
-          {item.title}
-        </h3>
-
-        {/* Issuer / Auditor */}
-        <div className="text-label text-quarry-grey font-sans uppercase tracking-wide block mb-3 font-medium">
-          {isMilestone ? (
-            <span>Benchmark: {item.issuer}</span>
-          ) : (
-            <span>Audited / Issued by: {item.issuer}</span>
-          )}
-        </div>
-
-        {/* Description */}
-        <p className="text-body-sm text-quarry-grey leading-relaxed mb-6 font-sans">
-          {item.description}
-        </p>
-
-        {/* Certification Details: Certificate Number & PDF link */}
-        {isCertification && (
-          <div className="pt-4 border-t border-slab-grey/40 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-sans">
-            <div className="text-quarry-grey">
-              <span className="text-earth-black font-semibold">Certificate No: </span>
-              <span>{item.certificateNumber || "Pending owner submission"}</span>
-            </div>
-
-            <div>
-              {item.evidenceUrl ? (
-                <a
-                  href={item.evidenceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-oxide-red hover:underline font-semibold"
-                >
-                  <FileText size={14} />
-                  <span>View certificate (PDF)</span>
-                  <ExternalLink size={12} />
-                </a>
-              ) : (
-                <span className="text-[11px] text-quarry-grey italic">
-                  Certificate on file upon owner confirmation
+              {item.verified && (
+                <span className="inline-flex items-center gap-1 text-[11px] font-sans text-emerald-800 font-semibold px-2 py-0.5 bg-emerald-50 border border-emerald-200">
+                  <CheckCircle size={11} /> Verified
                 </span>
               )}
             </div>
           </div>
+
+          <span className="font-sans text-xs text-quarry-grey uppercase tracking-wider block font-medium">
+            {isMilestone ? `Operational Standard: ${item.issuer}` : `Auditing Authority: ${item.issuer}`}
+          </span>
+        </div>
+
+        {/* Title */}
+        <h3 className="font-heading text-xl sm:text-[1.35rem] font-medium text-earth-black mb-3 min-h-[3.25rem] flex items-start leading-snug group-hover:text-oxide-red transition-colors">
+          {item.title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-sm font-sans text-quarry-grey leading-relaxed mb-6 font-normal">
+          {item.description}
+        </p>
+      </div>
+
+      {/* Bottom Technical Verification / Evidence Box */}
+      <div className="pt-4 border-t border-slab-grey/60 mt-auto text-xs font-sans">
+        {isCertification && (
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between text-[11px] font-sans">
+              <span className="text-quarry-grey uppercase tracking-wider font-medium">Record Status</span>
+              <span className="font-mono text-earth-black font-medium text-[11px]">
+                {item.certificateNumber === "PENDING OWNER CONFIRMATION"
+                  ? "Pending Verification"
+                  : item.certificateNumber || "Official Record on File"}
+              </span>
+            </div>
+
+            {item.evidenceUrl ? (
+              <a
+                href={item.evidenceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-between w-full py-2.5 px-3 bg-earth-black text-white hover:bg-oxide-red transition-colors font-sans text-xs uppercase tracking-wider font-semibold mt-1"
+              >
+                <span className="flex items-center gap-1.5">
+                  <FileText size={13} />
+                  <span>Inspect Audit Certificate</span>
+                </span>
+                <ExternalLink size={12} />
+              </a>
+            ) : (
+              <div className="text-[11px] text-quarry-grey italic pt-0.5">
+                Official credential available upon formal inquiry
+              </div>
+            )}
+          </div>
         )}
 
-        {/* Non-certification evidence link if available */}
         {!isCertification && item.evidenceUrl && (
-          <div className="pt-4 border-t border-slab-grey/40 text-xs font-sans">
-            <a
-              href={item.evidenceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-oxide-red hover:underline font-semibold"
-            >
-              <FileText size={14} />
-              <span>View documentation</span>
-              <ExternalLink size={12} />
-            </a>
+          <a
+            href={item.evidenceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-between w-full py-2.5 px-3 bg-earth-black text-white hover:bg-oxide-red transition-colors font-sans text-xs uppercase tracking-wider font-semibold"
+          >
+            <span className="flex items-center gap-1.5">
+              <FileText size={13} />
+              <span>Operational Documentation</span>
+            </span>
+            <ExternalLink size={12} />
+          </a>
+        )}
+
+        {!isCertification && !item.evidenceUrl && (
+          <div className="flex items-center justify-between text-quarry-grey text-[11px]">
+            <span className="uppercase tracking-wider font-semibold text-earth-black">
+              Fiza Corporation
+            </span>
+            <span>Verified Historical Record</span>
           </div>
         )}
       </div>
-    </div>
+    </article>
   );
 }
 
@@ -133,7 +142,6 @@ export default function AchievementsPage({
     return item.category === selectedCategory;
   });
 
-  // Split into Third-Party credentials vs Internal Milestones when viewing ALL
   const thirdPartyItems = filteredItems.filter(
     (item) => !item.isInternalMilestone && item.category !== "Milestones"
   );
@@ -141,142 +149,113 @@ export default function AchievementsPage({
     (item) => item.isInternalMilestone || item.category === "Milestones"
   );
 
-  // Organization JSON-LD listing verified certifications
-  const verifiedCerts = ACHIEVEMENTS.filter(
-    (item) => item.verified && item.category === "Certifications"
-  );
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    name: SITE_FACTS.companyName,
-    url: "https://fiza-one.vercel.app",
-    logo: "https://fiza-one.vercel.app/icon.svg",
-    description: "Heavy engineering, open-pit mining concessions, and heavy-haul railway corridors.",
-    ...(verifiedCerts.length > 0
-      ? {
-          hasCredential: verifiedCerts.map((cert) => ({
-            "@type": "EducationalOccupationalCredential",
-            name: cert.title,
-            credentialCategory: "certification",
-            recognizedBy: {
-              "@type": "Organization",
-              name: cert.issuer,
-            },
-          })),
-        }
-      : {}),
-  };
-
   return (
-    <div className="w-full pt-[72px]">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    <div className="w-full">
+      {/* Editorial Hero: Blended Photography with Clear Contrast (PDF Page 5) */}
+      <section className="relative w-full h-[60vh] min-h-[480px] flex items-end overflow-hidden bg-coal-dark">
+        <Image
+          src="/images/capabilities/industrial-microgrids.jpg"
+          alt="Fiza Engineering standards, industrial microgrids, and verified quality operations"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
 
-      {/* Editorial Header */}
-      <section className="relative bg-iron-white py-16 md:py-24 border-b border-slab-grey overflow-hidden">
-        {/* Background Industrial Image Integration */}
-        <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
-          <Image
-            src="/images/capabilities/industrial-microgrids.jpg"
-            alt="Fiza Engineering standards, industrial microgrids, and verified quality operations"
-            fill
-            priority
-            sizes="100vw"
-            className="img-cover object-center lg:object-right opacity-75 lg:opacity-90 mix-blend-multiply transition-opacity duration-1000 ease-in-out motion-safe:animate-ken-burns-gentle"
-          />
-          {/* Subtle Industrial Mesh Texture */}
-          <div
-            className="absolute inset-0 opacity-15 pointer-events-none"
-            style={{
-              backgroundImage: "radial-gradient(rgba(26, 26, 24, 0.25) 1px, transparent 1px)",
-              backgroundSize: "28px 28px",
-            }}
-          />
-          {/* Editorial Gradient Blend: Guarantees 100% Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-iron-white via-iron-white/65 sm:via-iron-white/40 to-iron-white/5 lg:to-transparent transition-opacity duration-1000 ease-in-out" />
-          <div className="absolute inset-0 bg-gradient-to-t from-iron-white/55 via-transparent to-iron-white/15 transition-opacity duration-1000 ease-in-out" />
-        </div>
+        {/* Directional Scrim Overlay: Visible photography + Crisp Legible Typography */}
+        <div 
+          className="absolute inset-0 z-[1] pointer-events-none"
+          style={{
+            background: `
+              linear-gradient(to right, rgba(20, 20, 18, 0.96) 0%, rgba(20, 20, 18, 0.85) 45%, rgba(20, 20, 18, 0.45) 75%, rgba(20, 20, 18, 0.25) 100%),
+              linear-gradient(to top, rgba(20, 20, 18, 0.9) 0%, transparent 40%, rgba(20, 20, 18, 0.6) 100%)
+            `
+          }}
+        />
 
-        <div className="relative z-10 max-w-content mx-auto px-6 md:px-12">
-          <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-3 font-semibold">
-            Standards, Accreditations & Milestones
-          </span>
-          <h1 className="text-display-lg sm:text-[3.5rem] md:text-display-xl font-medium text-earth-black leading-[0.95] mb-6">
-            Certifications & Awards
-          </h1>
-          <p className="text-body-lg text-quarry-grey max-w-2xl leading-relaxed">
-            International ISO safety accreditations, continental infrastructure awards, and operational mining milestones earned across more than {SITE_FACTS.yearsInBusinessLower} of engineering delivery in Africa and the Middle East.
-          </p>
-
-          {/* Filter Chips */}
-          <div className="flex flex-wrap items-center gap-3 mt-10 pt-6 border-t border-slab-grey">
-            <span className="text-label font-sans text-earth-black uppercase tracking-wide mr-2 font-bold text-xs">
-              Category:
-            </span>
-            {ACHIEVEMENT_CATEGORIES.map((cat) => {
-              const href = cat === "ALL" ? "/achievements" : `/achievements?category=${cat}`;
-              const isActive = selectedCategory === cat;
-
-              return (
-                <Link
-                  key={cat}
-                  href={href}
-                  scroll={false}
-                  className={`tag min-h-[36px] transition-colors ${
-                    isActive
-                      ? "tag--active"
-                      : "hover:bg-earth-black hover:text-iron-white"
-                  }`}
-                >
-                  {cat}
-                </Link>
-              );
-            })}
+        <div className="relative z-10 max-w-content mx-auto w-full px-6 md:px-12 pb-14 md:pb-16">
+          <div className="max-w-3xl">
+            <h1 className="font-heading text-display-lg sm:text-[3.5rem] md:text-display-xl font-medium text-iron-white leading-[1.08] mb-5">
+              Certifications & Awards
+            </h1>
+            <p className="text-body-lg text-white/95 max-w-2xl leading-relaxed font-normal">
+              International ISO safety accreditations, continental infrastructure awards, and operational mining milestones earned across more than {SITE_FACTS.yearsInBusinessLower} of engineering delivery in Africa and the Middle East.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Editorial Filter Navigation: Replaces boxy government buttons (PDF Page 5) */}
+      <section className="w-full bg-[#181816] border-b border-slab-grey/25 py-3 sticky top-[72px] z-30 backdrop-blur-md">
+        <div className="max-w-content mx-auto px-6 md:px-12">
+          <div className="flex items-center gap-6 overflow-x-auto no-scrollbar py-1">
+            <span className="font-sans text-xs uppercase tracking-wider text-dust-tan font-semibold shrink-0">
+              Filter By:
+            </span>
+            <div className="flex items-center gap-4 md:gap-6 shrink-0">
+              {ACHIEVEMENT_CATEGORIES.map((cat) => {
+                const href = cat === "ALL" ? "/achievements" : `/achievements?category=${cat}`;
+                const isActive = selectedCategory === cat;
+
+                return (
+                  <Link
+                    key={cat}
+                    href={href}
+                    scroll={false}
+                    className={cn(
+                      "editorial-tab text-xs uppercase tracking-wider py-2",
+                      isActive
+                        ? "text-oxide-red font-semibold border-b-2 border-oxide-red"
+                        : "text-dust-tan/80 hover:text-iron-white border-b-2 border-transparent"
+                    )}
+                  >
+                    {cat}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Side-by-Side Framed Grid Section (Replaces vertical timeline layout per user reference) */}
       <section className="w-full bg-[#EBE8E0] py-16 md:py-24 border-b border-slab-grey">
         <div className="max-w-content mx-auto px-6 md:px-12">
           {filteredItems.length === 0 ? (
-            /* Empty State */
             <div className="bg-iron-white border border-slab-grey p-12 text-center max-w-2xl mx-auto my-8 font-sans">
-              <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-2 font-semibold">
+              <span className="text-xs text-oxide-red font-sans uppercase tracking-wider block mb-2 font-semibold">
                 No Results Found
               </span>
-              <h3 className="text-heading-2 font-medium text-earth-black mb-3">
+              <h3 className="font-heading text-2xl font-medium text-earth-black mb-3">
                 No credentials listed under {selectedCategory}
               </h3>
-              <p className="text-body-sm text-quarry-grey mb-6 font-sans">
-                All corporate credentials, third-party audits, and partnership agreements are submitted to rigorous legal review prior to public confirmation.
+              <p className="text-sm text-quarry-grey mb-6 font-sans">
+                All corporate credentials, third-party audits, and partnership agreements are submitted to rigorous review prior to public confirmation.
               </p>
               <Link
                 href="/achievements"
                 scroll={false}
-                className="btn-secondary text-xs py-3 px-6 inline-block"
+                className="btn-secondary text-xs py-3 px-6 inline-block font-sans uppercase tracking-wider font-semibold"
               >
                 View all categories
               </Link>
             </div>
           ) : selectedCategory === "ALL" ? (
-            /* Grouped View when ALL is selected */
-            <div className="space-y-20">
+            <div className="space-y-16">
               {/* Group 1: Third-Party Certifications, Awards & Partnerships */}
               {thirdPartyItems.length > 0 && (
                 <div>
                   <div className="mb-10">
-                    <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-1 font-semibold">
-                      External Governance
+                    <span className="text-xs text-oxide-red font-sans uppercase tracking-wider block mb-1 font-semibold">
+                      External Accreditations
                     </span>
-                    <h2 className="text-heading-1 font-medium text-earth-black">
+                    <h2 className="font-heading text-display-md sm:text-[2.5rem] font-medium text-earth-black leading-tight">
                       Certifications & Industry Awards
                     </h2>
                   </div>
 
-                  <div className="relative border-l-2 border-earth-black ml-4 md:ml-10 pl-8 md:pl-16 space-y-12">
+                  {/* Framed Side-by-Side Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {thirdPartyItems.map((item) => (
                       <AchievementCard key={item.id} item={item} />
                     ))}
@@ -286,20 +265,21 @@ export default function AchievementsPage({
 
               {/* Group 2: Internal Milestones */}
               {milestoneItems.length > 0 && (
-                <div className="pt-8 border-t border-slab-grey/50">
+                <div className="pt-14 border-t border-slab-grey/60">
                   <div className="mb-10">
-                    <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-1 font-semibold">
-                      Internal Operations
+                    <span className="text-xs text-oxide-red font-sans uppercase tracking-wider block mb-1 font-semibold">
+                      Operational Benchmarks
                     </span>
-                    <h2 className="text-heading-1 font-medium text-earth-black">
-                      Milestones
+                    <h2 className="font-heading text-display-md sm:text-[2.5rem] font-medium text-earth-black leading-tight">
+                      Operational Milestones
                     </h2>
-                    <p className="text-body-sm text-quarry-grey max-w-xl mt-1">
+                    <p className="text-sm text-quarry-grey max-w-xl mt-1.5 font-sans leading-relaxed">
                       Internal production thresholds, earthmoving volumes, and equipment availability benchmarks achieved across company operations.
                     </p>
                   </div>
 
-                  <div className="relative border-l-2 border-earth-black ml-4 md:ml-10 pl-8 md:pl-16 space-y-12">
+                  {/* Framed Side-by-Side Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {milestoneItems.map((item) => (
                       <AchievementCard key={item.id} item={item} />
                     ))}
@@ -308,18 +288,18 @@ export default function AchievementsPage({
               )}
             </div>
           ) : (
-            /* Single Category Filtered View */
             <div>
               <div className="mb-10">
-                <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-1 font-semibold">
-                  Filter: {selectedCategory}
+                <span className="text-xs text-oxide-red font-sans uppercase tracking-wider block mb-1 font-semibold">
+                  Category: {selectedCategory}
                 </span>
-                <h2 className="text-heading-1 font-medium text-earth-black">
-                  {selectedCategory === "Milestones" ? "Milestones" : selectedCategory}
+                <h2 className="font-heading text-display-md sm:text-[2.5rem] font-medium text-earth-black leading-tight">
+                  {selectedCategory === "Milestones" ? "Operational Milestones" : selectedCategory}
                 </h2>
               </div>
 
-              <div className="relative border-l-2 border-earth-black ml-4 md:ml-10 pl-8 md:pl-16 space-y-12">
+              {/* Framed Side-by-Side Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredItems.map((item) => (
                   <AchievementCard key={item.id} item={item} />
                 ))}

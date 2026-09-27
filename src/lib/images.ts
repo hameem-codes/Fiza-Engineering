@@ -45,6 +45,16 @@ export const SITE_IMAGES = {
     },
   },
 
+  // Contact Page
+  contact: {
+    hero: {
+      src: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?q=80&w=2000&auto=format&fit=crop",
+      alt: "Fiza Engineering project directors and site engineers in consultation reviewing operational plans",
+      width: 2000,
+      height: 1200,
+    },
+  },
+
   // Turnkey Plant Strip (Modular Industrial Capabilities)
   turnkeyStrip: {
     primaryCrushing: {

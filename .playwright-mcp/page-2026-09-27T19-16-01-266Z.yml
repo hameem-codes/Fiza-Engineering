@@ -1,0 +1,272 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - link "F FIZA Engineering Corporation" [ref=f10e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f10e4]: F
+      - generic [ref=f10e5]:
+        - generic [ref=f10e6]: FIZA
+        - generic [ref=f10e8]: Engineering Corporation
+    - navigation [ref=f10e9]:
+      - link "Company" [ref=f10e10] [cursor=pointer]:
+        - /url: /company
+      - link "Services" [ref=f10e11] [cursor=pointer]:
+        - /url: /capabilities
+      - link "Projects" [ref=f10e12] [cursor=pointer]:
+        - /url: /projects
+      - link "Products" [ref=f10e13] [cursor=pointer]:
+        - /url: /products
+      - link "Certifications" [ref=f10e14] [cursor=pointer]:
+        - /url: /achievements
+      - link "News" [ref=f10e15] [cursor=pointer]:
+        - /url: /news
+      - link "Contact" [ref=f10e16] [cursor=pointer]:
+        - /url: /contact
+    - link "Get in Touch" [ref=f10e18] [cursor=pointer]:
+      - /url: /contact
+  - main [ref=f10e19]:
+    - generic [ref=f10e20]:
+      - generic [ref=f10e21]:
+        - generic [ref=f10e22]:
+          - img "Fiza Engineering heavy open-pit mining operations with hydraulic excavators and haul fleet" [ref=f10e25]
+          - generic [ref=f10e27]:
+            - heading "Mining, rail and heavy civil works across Africa." [level=1] [ref=f10e28]
+            - paragraph [ref=f10e29]: Direct open-pit concessions, heavy-haul railway corridors, and turnkey processing plants operating across key African resource jurisdictions.
+            - generic [ref=f10e30]:
+              - link "View active projects" [ref=f10e31] [cursor=pointer]:
+                - /url: /projects
+              - link "See our services" [ref=f10e32] [cursor=pointer]:
+                - /url: /capabilities
+        - generic [ref=f10e40]:
+          - generic [ref=f10e41]:
+            - generic [ref=f10e42]: Fleet Capacity
+            - generic [ref=f10e43]:
+              - generic "450+" [ref=f10e45]:
+                - generic [ref=f10e46]: "0"
+                - generic [ref=f10e47]: +
+              - generic [ref=f10e48]: Machines
+          - generic [ref=f10e49]:
+            - generic [ref=f10e50]: Jurisdictions
+            - generic [ref=f10e51]:
+              - generic "12" [ref=f10e53]: "0"
+              - generic [ref=f10e55]: Countries
+          - generic [ref=f10e56]:
+            - generic [ref=f10e57]: Global Footprint
+            - generic [ref=f10e58]:
+              - generic "4" [ref=f10e60]: "0"
+              - generic [ref=f10e62]: Continents
+          - generic [ref=f10e63]:
+            - generic [ref=f10e64]: Track Record
+            - generic [ref=f10e65]:
+              - generic "30+ Years" [ref=f10e67]:
+                - generic [ref=f10e68]: "0"
+                - generic [ref=f10e69]: + Years
+              - generic [ref=f10e70]: Experience
+      - generic [ref=f10e73]:
+        - generic [ref=f10e74]:
+          - heading "Engineering heavy infrastructure and direct mineral supply chains." [level=2] [ref=f10e75]
+          - paragraph [ref=f10e76]: Founded in 1994 by Muhammed Farooghuddin, Fiza Engineering Corporation is an integrated industrial company headquartered in Dubai with principal operations across Africa. We develop mineral concessions, engineer heavy-haul railway corridors, build turnkey processing plants, and supply bulk commodities to global markets with direct operational control and our own heavy machinery fleet.
+          - link "Read company profile →" [ref=f10e78] [cursor=pointer]:
+            - /url: /company
+            - text: Read company profile
+            - generic [ref=f10e79]: →
+        - generic [ref=f10e80]:
+          - generic [ref=f10e81]:
+            - img "High-tonnage surface mining extraction and overburden stripping operations" [ref=f10e82]
+            - generic [ref=f10e83]:
+              - generic [ref=f10e84]: Our fleet
+              - generic [ref=f10e85]: 450+ company-owned machines active across 4 continents.
+          - generic [ref=f10e86]:
+            - generic [ref=f10e87]: "1994"
+            - generic [ref=f10e88]: Founded
+      - generic [ref=f10e90]:
+        - generic [ref=f10e91]:
+          - generic [ref=f10e92]:
+            - heading "Three Primary Divisions" [level=2] [ref=f10e93]
+            - paragraph [ref=f10e94]: Core operating units coordinating heavy mineral extraction, physical commodity distribution, and freight logistics corridors.
+          - link "See all services" [ref=f10e95] [cursor=pointer]:
+            - /url: /capabilities
+        - generic [ref=f10e98]:
+          - link "Mining Services 01 Primary Division Mining Services Turnkey pit-to-port mining concessions, heavy equipment mobilization, and continuous extraction across African resource basins. Direct Fleet 450+ Heavy Units Explore Mining Operations" [ref=f10e99] [cursor=pointer]:
+            - /url: /capabilities/mining-services
+            - img "Mining Services" [ref=f10e101]
+            - generic [ref=f10e102]:
+              - generic [ref=f10e103]: "01"
+              - generic [ref=f10e104]: Primary Division
+            - generic [ref=f10e105]:
+              - heading "Mining Services" [level=3] [ref=f10e106]
+              - paragraph [ref=f10e107]: Turnkey pit-to-port mining concessions, heavy equipment mobilization, and continuous extraction across African resource basins.
+              - generic [ref=f10e108]:
+                - generic [ref=f10e109]: Direct Fleet
+                - generic [ref=f10e110]: 450+ Heavy Units
+              - generic [ref=f10e111]: Explore Mining Operations
+          - link "Mineral Trading 02 Primary Division Mineral Trading Direct physical commodity flows connecting African extraction operations to international smelters and refineries. Annual Volume 4.2M Metric Tonnes Explore Mineral Trading" [ref=f10e115] [cursor=pointer]:
+            - /url: /capabilities/mineral-trading
+            - img "Mineral Trading" [ref=f10e117]
+            - generic [ref=f10e118]:
+              - generic [ref=f10e119]: "02"
+              - generic [ref=f10e120]: Primary Division
+            - generic [ref=f10e121]:
+              - heading "Mineral Trading" [level=3] [ref=f10e122]
+              - paragraph [ref=f10e123]: Direct physical commodity flows connecting African extraction operations to international smelters and refineries.
+              - generic [ref=f10e124]:
+                - generic [ref=f10e125]: Annual Volume
+                - generic [ref=f10e126]: 4.2M Metric Tonnes
+              - generic [ref=f10e127]: Explore Mineral Trading
+          - link "Railway Solutions 03 Primary Division Railway Solutions Heavy-haul freight railway construction, track ballasting, and 32-tonne axle-load mineral transport corridors. Maintained Rail 1,140 km Corridors Explore Railway Corridors" [ref=f10e131] [cursor=pointer]:
+            - /url: /capabilities/railway-solutions
+            - img "Railway Solutions" [ref=f10e133]
+            - generic [ref=f10e134]:
+              - generic [ref=f10e135]: "03"
+              - generic [ref=f10e136]: Primary Division
+            - generic [ref=f10e137]:
+              - heading "Railway Solutions" [level=3] [ref=f10e138]
+              - paragraph [ref=f10e139]: Heavy-haul freight railway construction, track ballasting, and 32-tonne axle-load mineral transport corridors.
+              - generic [ref=f10e140]:
+                - generic [ref=f10e141]: Maintained Rail
+                - generic [ref=f10e142]: 1,140 km Corridors
+              - generic [ref=f10e143]: Explore Railway Corridors
+      - generic [ref=f10e148]:
+        - generic [ref=f10e149]:
+          - heading "Featured Active Projects" [level=2] [ref=f10e151]
+          - link "Browse all projects" [ref=f10e152] [cursor=pointer]:
+            - /url: /projects
+        - generic [ref=f10e155]:
+          - article [ref=f10e156]:
+            - img "Open-pit bauxite mine haul road with heavy-duty dump trucks in Falea, Mali" [ref=f10e158]
+            - generic [ref=f10e159]:
+              - generic [ref=f10e160]: Active Operation
+              - generic [ref=f10e162]: 2023 - Present
+            - generic [ref=f10e163]:
+              - generic [ref=f10e164]:
+                - generic [ref=f10e165]: Mali
+                - generic [ref=f10e168]: Mining Services & Rail
+              - heading [level=3] [ref=f10e169]:
+                - link "Falea Bauxite & Mineral Corridor" [ref=f10e170] [cursor=pointer]:
+                  - /url: /projects/falea-bauxite-corridor
+              - paragraph [ref=f10e171]: Turnkey development of an 8.5 MTPA bauxite deposit including a 94-kilometer dedicated heavy haul access road and river barge loading terminal.
+              - generic [ref=f10e172]:
+                - generic [ref=f10e173]:
+                  - generic [ref=f10e174]: Annual Ore Moved
+                  - generic [ref=f10e175]: 8.5M Tonnes
+                - generic [ref=f10e176]:
+                  - generic [ref=f10e177]: Haul Road Length
+                  - generic [ref=f10e178]: 94 Kilometers
+              - link "View Project Dossier" [ref=f10e179] [cursor=pointer]:
+                - /url: /projects/falea-bauxite-corridor
+          - article [ref=f10e183]:
+            - img "Overhead view of a large industrial mineral processing plant and crusher conveyor in Katanga, DRC" [ref=f10e185]
+            - generic [ref=f10e186]:
+              - generic [ref=f10e187]: Active Operation
+              - generic [ref=f10e189]: 2022 - 2024
+            - generic [ref=f10e190]:
+              - generic [ref=f10e191]:
+                - generic [ref=f10e192]: DR Congo
+                - generic [ref=f10e195]: Turnkey Plants
+              - heading [level=3] [ref=f10e196]:
+                - link "Katanga Copper-Cobalt Plant" [ref=f10e197] [cursor=pointer]:
+                  - /url: /projects/katanga-copper-processing
+              - paragraph [ref=f10e198]: Engineering, procurement, and construction of a modular 1,500 TPH primary crushing station and dense media separation circuit.
+              - generic [ref=f10e199]:
+                - generic [ref=f10e200]:
+                  - generic [ref=f10e201]: Circuit Throughput
+                  - generic [ref=f10e202]: 1,500 TPH
+                - generic [ref=f10e203]:
+                  - generic [ref=f10e204]: Lost Time Incidents
+                  - generic [ref=f10e205]: Zero
+              - link "View Project Dossier" [ref=f10e206] [cursor=pointer]:
+                - /url: /projects/katanga-copper-processing
+          - article [ref=f10e210]:
+            - img "Heavy equipment workshop and excavator depot at the Bamako Hub, Mali" [ref=f10e212]
+            - generic [ref=f10e213]:
+              - generic [ref=f10e214]: Active Operation
+              - generic [ref=f10e216]: 2020 - Continuous
+            - generic [ref=f10e217]:
+              - generic [ref=f10e218]:
+                - generic [ref=f10e219]: Mali
+                - generic [ref=f10e222]: Infrastructure
+              - heading [level=3] [ref=f10e223]:
+                - link "Bamako Heavy Equipment Base & Hub" [ref=f10e224] [cursor=pointer]:
+                  - /url: /projects/bamako-industrial-logistics-hub
+              - paragraph [ref=f10e225]: A 35,000 m² central depot featuring 6-bay heavy equipment rebuild workshops, bonded mineral storage, and central logistics dispatch.
+              - generic [ref=f10e226]:
+                - generic [ref=f10e227]:
+                  - generic [ref=f10e228]: Depot Footprint
+                  - generic [ref=f10e229]: 35,000 m²
+                - generic [ref=f10e230]:
+                  - generic [ref=f10e231]: Rebuild Capacity
+                  - generic [ref=f10e232]: 120 Powertrains
+              - link "View Project Dossier" [ref=f10e233] [cursor=pointer]:
+                - /url: /projects/bamako-industrial-logistics-hub
+      - generic [ref=f10e239]:
+        - img "Official portrait monogram for Muhammed Farooghuddin" [ref=f10e241]:
+          - generic [ref=f10e242]: MF
+          - generic [ref=f10e244]: Muhammed Farooghuddin
+          - generic [ref=f10e245]: Founder & Chief Executive Officer
+        - generic [ref=f10e246]:
+          - heading "Muhammed Farooghuddin" [level=2] [ref=f10e247]
+          - generic [ref=f10e248]: Founder & Chief Executive Officer
+          - paragraph [ref=f10e249]: India-born and Dubai-based, with more than four decades in international business, mineral trading and industrial development. Under his leadership, Fiza has developed strategic concessions, heavy rail logistics corridors, and large-scale turnkey industrial plant operations across Africa, Asia, and the Middle East.
+          - blockquote [ref=f10e250]:
+            - paragraph [ref=f10e251]: “Our purpose is to build partnerships that strengthen local capability, create lasting value and help ambitious projects move forward.”
+            - generic [ref=f10e252]: — Muhammed Farooghuddin, Founder & CEO
+          - link "Read leadership profile" [ref=f10e254] [cursor=pointer]:
+            - /url: /company#leadership
+      - generic [ref=f10e257]:
+        - generic [ref=f10e258]:
+          - heading "Talk to our engineering leadership." [level=2] [ref=f10e259]
+          - paragraph [ref=f10e260]: Whether mobilizing heavy fleet for open-pit mining concessions, engineering heavy-haul rail spurs, or structuring turnkey plant EPC contracts, our project teams are ready to deploy.
+          - link "Initiate project consultation" [ref=f10e262] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=f10e266]:
+          - generic [ref=f10e267]: Corporate Inquiries
+          - generic [ref=f10e273]:
+            - generic [ref=f10e274]: Headquarters
+            - generic [ref=f10e275]: DIFC Gate Precinct, Building 4, Level 7, Dubai
+          - generic [ref=f10e280]:
+            - generic [ref=f10e281]: Email
+            - link "info@fizaengineering.com" [ref=f10e282] [cursor=pointer]:
+              - /url: mailto:info@fizaengineering.com
+          - generic [ref=f10e286]:
+            - generic [ref=f10e287]: Telephone
+            - link "+971 4 362 8800" [ref=f10e288] [cursor=pointer]:
+              - /url: tel:+97143628800
+  - contentinfo [ref=f10e289]:
+    - generic [ref=f10e290]:
+      - generic [ref=f10e291]:
+        - generic [ref=f10e292]:
+          - link "FIZA" [ref=f10e293] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f10e296]: "|"
+          - generic [ref=f10e297]: Heavy Engineering, Mining & Rail Infrastructure
+        - navigation [ref=f10e298]:
+          - link "Company" [ref=f10e299] [cursor=pointer]:
+            - /url: /company
+          - link "Services" [ref=f10e300] [cursor=pointer]:
+            - /url: /capabilities
+          - link "Projects" [ref=f10e301] [cursor=pointer]:
+            - /url: /projects
+          - link "Fleet" [ref=f10e302] [cursor=pointer]:
+            - /url: /products
+          - link "Newsroom" [ref=f10e303] [cursor=pointer]:
+            - /url: /news
+          - link "Contact" [ref=f10e304] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=f10e305]:
+        - generic [ref=f10e306]:
+          - generic [ref=f10e307]:
+            - text: "Dubai HQ:"
+            - link "+971 4 362 8800" [ref=f10e308] [cursor=pointer]:
+              - /url: tel:+97143628800
+          - generic [ref=f10e309]: ·
+          - link "info@fizaengineering.com" [ref=f10e311] [cursor=pointer]:
+            - /url: mailto:info@fizaengineering.com
+          - generic [ref=f10e312]: ·
+          - generic [ref=f10e313]: DIFC Gate Precinct, Dubai · Africa
+        - generic [ref=f10e314]:
+          - generic [ref=f10e315]: © 2026 Fiza Engineering Corporation.
+          - link "Privacy" [ref=f10e316] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=f10e317] [cursor=pointer]:
+            - /url: /terms
+          - link "Accreditations" [ref=f10e318] [cursor=pointer]:
+            - /url: /achievements

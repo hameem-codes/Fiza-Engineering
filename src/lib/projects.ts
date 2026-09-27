@@ -236,7 +236,7 @@ export const PROJECTS: Project[] = [
       { label: "Elevated Causeways", value: "14 Sections" },
       { label: "Projected Haul Capacity", value: "2.4M TPA" }
     ],
-    image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=1600&auto=format&fit=crop",
+    image: "/images/capabilities/heavy-infrastructure.jpg",
     imageAlt: "Heavy machinery building a new road through remote terrain for the Manono Critical Minerals Route, DRC",
     verified: true,
     client: "Central African Energy Metals Consortium",
@@ -276,7 +276,7 @@ export const PROJECTS: Project[] = [
       { label: "Processing Throughput", value: "450 Tonnes/Day" },
       { label: "Farmers Supported", value: "14,000 Growers" }
     ],
-    image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop",
+    image: "/images/capabilities/commercial-agriculture.jpg",
     imageAlt: "Large commercial grain storage silos and agricultural processing facility in Sikasso, Mali",
     verified: true,
     client: "Malian Agro-Industrial Development Board",

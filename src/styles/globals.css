@@ -30,6 +30,7 @@ html {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,6 +39,21 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+/* Fast, responsive tactile click feedback & micro-interactions */
+button, a, [role="button"], .editorial-tab {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+button:active:not(:disabled),
+a:active:not(:disabled),
+[role="button"]:active:not([aria-disabled="true"]),
+.editorial-tab:active {
+  transform: translateY(1px);
+  filter: brightness(0.96);
+  transition: transform 60ms ease, filter 60ms ease;
 }
 
 /* Mandatory Rule: ZERO border-radius on buttons, cards, inputs, and tags */
@@ -50,6 +66,41 @@ textarea,
 .badge,
 .btn {
   border-radius: 0 !important;
+}
+
+/* OpenFreeMap / MapLibre styling integration */
+.maplibregl-map {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.maplibregl-canvas-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+.maplibregl-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+}
+.maplibregl-ctrl-bottom-right {
+  bottom: 6px !important;
+  right: 8px !important;
+}
+.maplibregl-ctrl-attrib {
+  font-size: 10px !important;
+  background-color: rgba(244, 242, 236, 0.85) !important;
+  color: #6B6B63 !important;
+  border: 1px solid rgba(209, 206, 198, 0.5) !important;
+  padding: 2px 6px !important;
+}
+.maplibregl-ctrl-attrib a {
+  color: #1A1A18 !important;
+  text-decoration: underline !important;
 }
 
 /* Selection highlight in oxide red */
@@ -389,25 +440,99 @@ select.form-input:focus-visible {
   object-fit: cover;
 }
 
-/* Dark Overlay for Hero and Banners */
-.dark-overlay {
+/* Directional & Scrim Overlays for Photography */
+.image-blend-hero {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(26, 26, 24, 0.35) 0%,
-    rgba(26, 26, 24, 0.85) 100%
-  );
+  background: 
+    linear-gradient(to right, rgba(26, 26, 24, 0.95) 0%, rgba(26, 26, 24, 0.82) 38%, rgba(26, 26, 24, 0.45) 70%, rgba(26, 26, 24, 0.25) 100%),
+    linear-gradient(to bottom, rgba(26, 26, 24, 0.75) 0%, transparent 22%, transparent 75%, rgba(26, 26, 24, 0.9) 100%);
+  pointer-events: none;
 }
 
-.dark-overlay-heavy {
+.image-blend-left {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(26, 26, 24, 0.94) 0%, rgba(26, 26, 24, 0.8) 45%, rgba(26, 26, 24, 0.2) 100%);
+  pointer-events: none;
+}
+
+.image-blend-right {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, rgba(26, 26, 24, 0.94) 0%, rgba(26, 26, 24, 0.8) 45%, rgba(26, 26, 24, 0.2) 100%);
+  pointer-events: none;
+}
+
+.image-blend-bottom {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 26, 24, 0.95) 0%, rgba(26, 26, 24, 0.65) 50%, rgba(26, 26, 24, 0.15) 100%);
+  pointer-events: none;
+}
+
+.image-blend-card {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to bottom,
-    rgba(26, 26, 24, 0.6) 0%,
-    rgba(26, 26, 24, 0.95) 100%
+    to top,
+    rgba(20, 20, 18, 0.96) 0%,
+    rgba(20, 20, 18, 0.82) 42%,
+    rgba(20, 20, 18, 0.4) 75%,
+    rgba(20, 20, 18, 0.15) 100%
   );
+  pointer-events: none;
+}
+
+.image-blend-editorial {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26, 26, 24, 0.35) 0%, rgba(26, 26, 24, 0.88) 100%);
+  pointer-events: none;
+}
+
+/* Editorial Tabs (Replaces boxy government-style button filters) */
+.editorial-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 4px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--quarry-grey);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0 !important;
+  cursor: pointer;
+  transition: all 200ms ease;
+  white-space: nowrap;
+}
+
+.editorial-tab:hover {
+  color: var(--earth-black);
+  border-bottom-color: var(--slab-grey);
+}
+
+.editorial-tab--active {
+  color: var(--oxide-red) !important;
+  border-bottom-color: var(--oxide-red) !important;
+  font-weight: 600;
+}
+
+.dark-section .editorial-tab {
+  color: var(--dust-tan);
+}
+
+.dark-section .editorial-tab:hover {
+  color: var(--iron-white);
+  border-bottom-color: var(--quarry-grey);
+}
+
+.dark-section .editorial-tab--active {
+  color: var(--iron-white) !important;
+  border-bottom-color: var(--oxide-red) !important;
 }
 
 /* Hide scrollbar for clean horizontal strips */
@@ -488,5 +613,19 @@ select.form-input:focus-visible {
 .card-lift:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px -4px rgba(26, 26, 24, 0.08);
+}
+
+/* Timeline Auto-advance Progress Bar */
+@keyframes timelineProgressBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-timeline-progress {
+  animation: timelineProgressBar 5.5s linear forwards;
 }
 

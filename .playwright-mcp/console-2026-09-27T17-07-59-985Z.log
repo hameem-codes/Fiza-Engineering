@@ -1,0 +1,42 @@
+[    1644ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
+[    3552ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[    4524ms] [LOG] [Fast Refresh] done in 973ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[    6544ms] [ERROR] Error: Worker failed to load. Check that the worker URL is correct.
+    at Worker.eval (webpack-internal:///(app-pages-browser)/./node_modules/maplibre-gl/dist/maplibre-gl.mjs:94:43238) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[    6545ms] [ERROR] Error: Worker failed to load. Check that the worker URL is correct.
+    at Worker.eval (webpack-internal:///(app-pages-browser)/./node_modules/maplibre-gl/dist/maplibre-gl.mjs:94:43238) @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[   14470ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[   15927ms] [LOG] [Fast Refresh] done in 1456ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43
+[  243448ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[  244456ms] [ERROR] ./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+Error: ENOENT: no such file or directory, open 'C:\Users\matee\OneDrive\Desktop\Fizza-Eng\node_modules\maplibre-gl\dist\maplibre-gl.mjs'
+
+Import trace for requested module:
+./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+./src/components/sections/GlobalOfficeMap.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[  279581ms] [ERROR] ./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+Error: ENOENT: no such file or directory, open 'C:\Users\matee\OneDrive\Desktop\Fizza-Eng\node_modules\maplibre-gl\dist\maplibre-gl.mjs'
+
+Import trace for requested module:
+./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+./src/components/sections/GlobalOfficeMap.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[  281092ms] [ERROR] ./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+Error: ENOENT: no such file or directory, open 'C:\Users\matee\OneDrive\Desktop\Fizza-Eng\node_modules\maplibre-gl\dist\maplibre-gl.mjs'
+
+Import trace for requested module:
+./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+./src/components/sections/GlobalOfficeMap.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[  281370ms] [ERROR] ./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+Error: ENOENT: no such file or directory, open 'C:\Users\matee\OneDrive\Desktop\Fizza-Eng\node_modules\maplibre-gl\dist\maplibre-gl.mjs'
+
+Import trace for requested module:
+./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+./src/components/sections/GlobalOfficeMap.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[  295077ms] [ERROR] ./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+Error: ENOENT: no such file or directory, open 'C:\Users\matee\OneDrive\Desktop\Fizza-Eng\node_modules\maplibre-gl\dist\maplibre-gl.mjs'
+
+Import trace for requested module:
+./node_modules/maplibre-gl/dist/maplibre-gl.mjs
+./src/components/sections/GlobalOfficeMap.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/app-index.js:32
+[  295103ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[  300713ms] [LOG] [Fast Refresh] done in 5610ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:43

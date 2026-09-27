@@ -1,0 +1,12 @@
+[   13577ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:186
+[   15932ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:114
+[   17639ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
+[   18104ms] [LOG] [GlobalOfficeMap] initOpenFreeMap started, container: true @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:67
+[   18105ms] [LOG] [GlobalOfficeMap] Importing maplibre-gl... @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:70
+[   18117ms] [LOG] [GlobalOfficeMap] initOpenFreeMap started, container: true @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:67
+[   18118ms] [LOG] [GlobalOfficeMap] Importing maplibre-gl... @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:70
+[   21781ms] [LOG] [GlobalOfficeMap] maplibreModule imported: object @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:72
+[   21781ms] [LOG] [GlobalOfficeMap] maplibregl resolved: true Map class: function @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:74
+[   21782ms] [LOG] [GlobalOfficeMap] maplibreModule imported: object @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:72
+[   21782ms] [LOG] [GlobalOfficeMap] maplibregl resolved: true Map class: function @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:74
+[   21840ms] [LOG] [GlobalOfficeMap] Map instance created: true @ webpack-internal:///(app-pages-browser)/./src/components/sections/GlobalOfficeMap.tsx:89

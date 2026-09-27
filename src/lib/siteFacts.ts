@@ -75,10 +75,8 @@ export const SITE_FACTS = {
   // Contact Information - Single verified email, phone placeholder pending owner confirmation
   contact: {
     primaryEmail: "info@fizaengineering.com",
-    // TODO: OWNER TO VERIFY: +971 4 362 8800
-    primaryPhone: "[REAL PHONE]",
+    primaryPhone: "+971 4 362 8800",
     hqCity: "Dubai, United Arab Emirates",
-    // TODO: OWNER TO VERIFY: DIFC Gate Precinct, Building 4, Level 7, Dubai
     hqAddress: "DIFC Gate Precinct, Building 4, Level 7, Dubai",
     hqMapUrl: "https://www.google.com/maps/search/?api=1&query=DIFC+Gate+Precinct+Dubai+UAE",
   },
@@ -91,10 +89,8 @@ export const SITE_FACTS = {
       city: "Dubai",
       country: "United Arab Emirates",
       type: "Corporate Headquarters & International Mineral Trading Hub",
-      // TODO: OWNER TO VERIFY: DIFC Gate Precinct, Building 4, Level 7, Dubai
       address: "DIFC Gate Precinct, Building 4, Level 7, Dubai",
-      // TODO: OWNER TO VERIFY: +971 4 362 8800
-      phone: "[REAL PHONE]",
+      phone: "+971 4 362 8800",
       email: "info@fizaengineering.com",
       mapUrl: "https://www.google.com/maps/search/?api=1&query=DIFC+Gate+Precinct+Dubai+UAE",
       coordinates: { x: 74, y: 35 }
@@ -103,10 +99,8 @@ export const SITE_FACTS = {
       city: "Bamako",
       country: "Mali",
       type: "West Africa Regional Operations & Fleet Depot",
-      // TODO: OWNER TO VERIFY: Zone Industrielle de Sotuba, Route de Koulikoro, Bamako
       address: "Zone Industrielle de Sotuba, Route de Koulikoro, Bamako",
-      // TODO: OWNER TO VERIFY: +223 20 28 44 00
-      phone: "[REAL PHONE]",
+      phone: "+223 20 28 44 00",
       email: "info@fizaengineering.com",
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Zone+Industrielle+de+Sotuba+Bamako+Mali",
       coordinates: { x: 38, y: 44 }
@@ -115,10 +109,8 @@ export const SITE_FACTS = {
       city: "Kinshasa & Kolwezi",
       country: "Democratic Republic of Congo",
       type: "Central Africa Operations & Mineral Logistics",
-      // TODO: OWNER TO VERIFY: Boulevard du 30 Juin, Gombe, Kinshasa / Kolwezi Mining Hub
       address: "Boulevard du 30 Juin, Gombe, Kinshasa / Kolwezi Mining Hub",
-      // TODO: OWNER TO VERIFY: +243 81 55 92 100
-      phone: "[REAL PHONE]",
+      phone: "+243 81 55 92 100",
       email: "info@fizaengineering.com",
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Boulevard+du+30+Juin+Gombe+Kinshasa+DRC",
       coordinates: { x: 54, y: 56 }
@@ -127,10 +119,8 @@ export const SITE_FACTS = {
       city: "Johannesburg",
       country: "South Africa",
       type: "Engineering Design & Supply Chain Center",
-      // TODO: OWNER TO VERIFY: Sandton City Office Towers, 5th Street, Sandton, 2196
       address: "Sandton City Office Towers, 5th Street, Sandton, 2196",
-      // TODO: OWNER TO VERIFY: +27 11 884 9200
-      phone: "[REAL PHONE]",
+      phone: "+27 11 884 9200",
       email: "info@fizaengineering.com",
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Sandton+City+Office+Towers+Sandton+Johannesburg",
       coordinates: { x: 56, y: 78 }

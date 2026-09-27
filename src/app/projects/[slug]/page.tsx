@@ -131,7 +131,7 @@ export default function ProjectDetailPage({ params }: Props) {
             </span>
           </div>
 
-          <h1 className="text-display-lg sm:text-[3.5rem] font-medium text-iron-white leading-[0.95] max-w-4xl">
+          <h1 className="text-display-lg sm:text-[3.5rem] font-medium text-iron-white leading-[1.08] max-w-4xl">
             {project.name}
           </h1>
         </div>

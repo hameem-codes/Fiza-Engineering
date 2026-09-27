@@ -9,13 +9,7 @@ export function PartnersSection() {
       <div className="max-w-content mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-14 gap-6">
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <span className="w-2 h-2 bg-oxide-red inline-block" />
-              <span className="text-label text-earth-black font-sans uppercase tracking-wide font-semibold">
-                Strategic Alliances & Associations
-              </span>
-            </div>
-            <h2 className="text-display-lg font-medium text-earth-black leading-[0.95]">
+            <h2 className="text-display-lg font-medium text-earth-black leading-[1.08]">
               International Engineering Partners
             </h2>
           </div>

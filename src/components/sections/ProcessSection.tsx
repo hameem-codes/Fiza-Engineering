@@ -30,10 +30,7 @@ export function ProcessSection() {
       <div className="max-w-content mx-auto px-6 md:px-12">
         {/* Header */}
         <div className="max-w-xl mb-14">
-          <span className="text-label text-earth-black font-sans uppercase tracking-wide font-semibold block mb-2">
-            Process
-          </span>
-          <h2 className="text-display-lg sm:text-[2.75rem] font-medium text-earth-black leading-[1.0] mb-3">
+          <h2 className="text-display-lg sm:text-[2.75rem] font-medium text-earth-black leading-[1.08] mb-3">
             How We Work
           </h2>
           <p className="text-quarry-grey text-body-sm leading-relaxed">

@@ -1,100 +1,128 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { Pickaxe, Coins, TrainTrack, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { CAPABILITIES } from "@/lib/constants";
 
-const DIVISION_ICONS: { [key: string]: React.ReactNode } = {
-  "mining-services": <Pickaxe size={24} className="text-earth-black" />,
-  "mineral-trading": <Coins size={24} className="text-earth-black" />,
-  "railway-solutions": <TrainTrack size={24} className="text-earth-black" />,
+const DIVISION_BUTTON_LABELS: { [key: string]: string } = {
+  "mining-services": "Explore Mining Operations",
+  "mineral-trading": "Explore Mineral Trading",
+  "railway-solutions": "Explore Railway Corridors",
 };
 
-const DIVISION_BUTTON_LABELS: { [key: string]: string } = {
-  "mining-services": "Explore mining services",
-  "mineral-trading": "Explore mineral trading",
-  "railway-solutions": "Explore railway solutions",
+const DIVISION_SPECS: { [key: string]: { label: string; value: string } } = {
+  "mining-services": { label: "Direct Fleet", value: "450+ Heavy Units" },
+  "mineral-trading": { label: "Annual Volume", value: "4.2M Metric Tonnes" },
+  "railway-solutions": { label: "Maintained Rail", value: "1,140 km Corridors" },
+};
+
+const DIVISION_SUMMARIES: { [key: string]: string } = {
+  "mining-services": "Turnkey pit-to-port mining concessions, heavy equipment mobilization, and continuous extraction across African resource basins.",
+  "mineral-trading": "Direct physical commodity flows connecting African extraction operations to international smelters and refineries.",
+  "railway-solutions": "Heavy-haul freight railway construction, track ballasting, and 32-tonne axle-load mineral transport corridors.",
 };
 
 export function CapabilitiesGrid() {
-  // Home page presents ONLY the 3 primary divisions
+  // Home page presents the 3 primary divisions as large editorial image-led panels
   const primaryDivisions = CAPABILITIES.slice(0, 3);
 
   return (
-    <section className="w-full bg-[#EFECE5] py-12 md:py-18 border-b border-slab-grey">
+    <section className="w-full bg-iron-white py-12 md:py-16 border-b border-slab-grey">
       <div className="max-w-content mx-auto px-6 md:px-12">
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
+        {/* Section Header: Clean Editorial Title (Eyebrow Removed as instructed by PDF Page 4) */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-10 gap-6">
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <span className="w-2 h-2 bg-oxide-red inline-block" />
-              <span className="text-label text-earth-black font-sans uppercase tracking-wide font-semibold">
-                Operational Scope
-              </span>
-            </div>
-            <h2 className="text-display-lg sm:text-[2.75rem] font-medium text-earth-black leading-[1.0]">
+            <h2 className="font-heading text-display-lg sm:text-[2.75rem] md:text-[3rem] font-medium text-earth-black leading-[1.08] tracking-tight">
               Three Primary Divisions
             </h2>
+            <p className="text-body text-quarry-grey max-w-xl mt-2 font-normal leading-relaxed text-sm sm:text-base">
+              Core operating units coordinating heavy mineral extraction, physical commodity distribution, and freight logistics corridors.
+            </p>
           </div>
           <Link
             href="/capabilities"
-            className="text-label font-bold text-earth-black hover:text-oxide-red uppercase tracking-wide inline-flex items-center gap-2 transition-colors font-sans"
+            className="font-sans text-xs font-semibold text-earth-black hover:text-oxide-red uppercase tracking-wider inline-flex items-center gap-2 transition-colors pb-1 border-b border-earth-black/30 hover:border-oxide-red"
           >
             See all services <ArrowRight size={14} />
           </Link>
         </div>
 
-        {/* 3 Primary Divisions Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {primaryDivisions.map((division) => (
-            <div
-              key={division.id}
-              className="bg-iron-white border border-slab-grey border-t-4 border-t-oxide-red p-8 md:p-9 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-earth-black group"
-            >
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="p-3 bg-[#E8E5DD] border border-slab-grey group-hover:bg-oxide-red group-hover:text-iron-white transition-colors">
-                    {DIVISION_ICONS[division.id]}
-                  </div>
-                  <span className="text-[11px] font-sans text-oxide-red font-bold uppercase tracking-wide">
+        {/* 3 Image-Led Editorial Panels (Clean, Spacious, Un-cluttered Composition) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {primaryDivisions.map((division, idx) => {
+            const spec = DIVISION_SPECS[division.id];
+            const summary = DIVISION_SUMMARIES[division.id] || division.description;
+
+            return (
+              <Link
+                key={division.id}
+                href={`/capabilities/${division.slug}`}
+                className="group relative min-h-[410px] sm:min-h-[440px] flex flex-col justify-between overflow-hidden border border-slab-grey transition-all duration-500 hover:border-earth-black hover:shadow-xl bg-coal-dark p-6 sm:p-7"
+              >
+                {/* Full-Bleed Background Photography with Generous Upper Breathing Room */}
+                <div className="absolute inset-0 z-0 overflow-hidden">
+                  <Image
+                    src={division.image}
+                    alt={division.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                  {/* Refined Scrim: Clear photograph view at top, text-safe gradient at bottom */}
+                  <div 
+                    className="absolute inset-0 z-[1] pointer-events-none"
+                    style={{
+                      background: `
+                        linear-gradient(to top, rgba(14, 14, 12, 0.96) 0%, rgba(14, 14, 12, 0.85) 50%, rgba(14, 14, 12, 0.3) 75%, rgba(14, 14, 12, 0.1) 100%),
+                        linear-gradient(to bottom, rgba(14, 14, 12, 0.35) 0%, transparent 22%)
+                      `
+                    }}
+                  />
+                </div>
+
+                {/* Top Row: Division Number & Category Badge */}
+                <div className="relative z-10 flex items-center justify-between">
+                  <span className="font-mono text-xs uppercase tracking-widest text-dust-tan font-semibold">
+                    0{idx + 1}
+                  </span>
+                  <span className="text-[10px] font-sans uppercase tracking-widest px-2.5 py-0.5 bg-black/50 text-white/90 border border-white/15 backdrop-blur-sm font-semibold">
                     Primary Division
                   </span>
                 </div>
 
-                <h3 className="text-heading-2 font-medium text-earth-black mb-3 group-hover:text-oxide-red transition-colors">
-                  {division.title}
-                </h3>
+                {/* Bottom Content Area: Spacious, Refined Editorial Typography */}
+                <div className="relative z-10 flex flex-col justify-end pt-12">
+                  {/* Service Title */}
+                  <h3 className="font-heading text-2xl sm:text-[1.85rem] font-medium text-white mb-2 leading-snug group-hover:text-oxide-red transition-colors">
+                    {division.title}
+                  </h3>
 
-                <p className="text-body-sm text-earth-black font-medium mb-3 leading-snug">
-                  {division.tagline}
-                </p>
+                  {/* Refined Concise Summary */}
+                  <p className="font-sans text-xs sm:text-sm text-white/85 leading-relaxed mb-5 font-normal">
+                    {summary}
+                  </p>
 
-                <p className="text-body-sm text-quarry-grey leading-relaxed mb-6">
-                  {division.description}
-                </p>
-
-                {/* Scope Highlights */}
-                <div className="pt-4 border-t border-slab-grey/60 space-y-2 mb-8">
-                  {division.scope.slice(0, 3).map((item, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs font-sans text-quarry-grey font-medium">
-                      <span className="w-1.5 h-1.5 bg-oxide-red inline-block flex-shrink-0" />
-                      <span className="truncate">{item}</span>
+                  {/* Clean Single-Line Spec Badge */}
+                  {spec && (
+                    <div className="flex items-center justify-between text-xs font-sans py-2 px-3 bg-black/40 border border-white/10 mb-4 backdrop-blur-sm">
+                      <span className="text-[11px] uppercase tracking-wider text-dust-tan font-medium">
+                        {spec.label}
+                      </span>
+                      <span className="font-semibold text-white text-xs tracking-wide">
+                        {spec.value}
+                      </span>
                     </div>
-                  ))}
-                </div>
-              </div>
+                  )}
 
-              {/* Distinct Action Button */}
-              <div className="pt-5 border-t border-slab-grey">
-                <Link
-                  href={`/capabilities/${division.slug}`}
-                  className="w-full bg-[#EAE7DF] border border-slab-grey hover:bg-earth-black hover:text-iron-white hover:border-earth-black transition-colors font-sans text-xs uppercase tracking-wide font-semibold py-3 px-4 flex items-center justify-between text-earth-black group-hover:bg-oxide-red group-hover:text-iron-white group-hover:border-oxide-red"
-                >
-                  <span>{DIVISION_BUTTON_LABELS[division.id] || "View division details"}</span>
-                  <ArrowRight size={14} />
-                </Link>
-              </div>
-            </div>
-          ))}
+                  {/* Refined Editorial CTA Button */}
+                  <div className="inline-flex items-center justify-between w-full py-2.5 px-4 bg-white/10 hover:bg-oxide-red text-white backdrop-blur-sm border border-white/20 hover:border-oxide-red transition-all duration-300 font-sans text-xs uppercase tracking-wider font-semibold group/btn shadow-sm">
+                    <span>{DIVISION_BUTTON_LABELS[division.id] || "Explore Operations"}</span>
+                    <ArrowRight size={13} className="transition-transform duration-300 group-hover/btn:translate-x-1 text-white" />
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

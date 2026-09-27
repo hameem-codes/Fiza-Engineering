@@ -1,0 +1,175 @@
+- generic [ref=f11e1]:
+  - banner [ref=f11e2]:
+    - link "F FIZA Engineering Corporation" [ref=f11e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f11e4]: F
+      - generic [ref=f11e5]:
+        - generic [ref=f11e6]: FIZA
+        - generic [ref=f11e8]: Engineering Corporation
+    - navigation [ref=f11e9]:
+      - link "Company" [ref=f11e10] [cursor=pointer]:
+        - /url: /company
+      - link "Services" [ref=f11e11] [cursor=pointer]:
+        - /url: /capabilities
+      - link "Projects" [ref=f11e12] [cursor=pointer]:
+        - /url: /projects
+      - link "Products" [ref=f11e13] [cursor=pointer]:
+        - /url: /products
+      - link "Certifications" [active] [ref=f11e15] [cursor=pointer]:
+        - /url: /achievements
+      - link "News" [ref=f11e16] [cursor=pointer]:
+        - /url: /news
+      - link "Contact" [ref=f11e17] [cursor=pointer]:
+        - /url: /contact
+    - link "Get in Touch" [ref=f11e19] [cursor=pointer]:
+      - /url: /contact
+  - main [ref=f11e20]:
+    - generic [ref=f11e439]:
+      - generic [ref=f11e440]:
+        - img "Fiza Engineering standards, industrial microgrids, and verified quality operations" [ref=f11e441]
+        - generic [ref=f11e443]:
+          - heading "Certifications & Awards" [level=1] [ref=f11e444]
+          - paragraph [ref=f11e445]: International ISO safety accreditations, continental infrastructure awards, and operational mining milestones earned across more than 30+ years of engineering delivery in Africa and the Middle East.
+      - generic [ref=f11e448]:
+        - generic [ref=f11e449]: "Filter By:"
+        - generic [ref=f11e450]:
+          - link "ALL" [ref=f11e451] [cursor=pointer]:
+            - /url: /achievements
+          - link "Certifications" [ref=f11e452] [cursor=pointer]:
+            - /url: /achievements?category=Certifications
+          - link "Awards" [ref=f11e453] [cursor=pointer]:
+            - /url: /achievements?category=Awards
+          - link "Milestones" [ref=f11e454] [cursor=pointer]:
+            - /url: /achievements?category=Milestones
+          - link "Partnerships" [ref=f11e455] [cursor=pointer]:
+            - /url: /achievements?category=Partnerships
+      - generic [ref=f11e458]:
+        - generic [ref=f11e459]:
+          - generic [ref=f11e460]:
+            - generic [ref=f11e461]: External Accreditations
+            - heading "Certifications & Industry Awards" [level=2] [ref=f11e462]
+          - generic [ref=f11e463]:
+            - article [ref=f11e464]:
+              - generic [ref=f11e465]:
+                - generic [ref=f11e466]:
+                  - generic [ref=f11e467]:
+                    - generic [ref=f11e468]: "2025"
+                    - generic [ref=f11e469]: Certifications
+                  - generic [ref=f11e471]: "Auditing Authority: Bureau Veritas International"
+                - heading "ISO 45001:2018 Occupational Health & Safety" [level=3] [ref=f11e472]
+                - paragraph [ref=f11e473]: Certified across all 14 active project sites, reflecting an industry-leading lost-time injury frequency rate (LTIFR) of 0.12 per million hours.
+              - generic [ref=f11e475]:
+                - generic [ref=f11e476]:
+                  - generic [ref=f11e477]: Record Status
+                  - generic [ref=f11e478]: Pending Verification
+                - generic [ref=f11e479]: Official credential available upon formal inquiry
+            - article [ref=f11e480]:
+              - generic [ref=f11e481]:
+                - generic [ref=f11e482]:
+                  - generic [ref=f11e483]:
+                    - generic [ref=f11e484]: "2024"
+                    - generic [ref=f11e485]: Awards
+                  - generic [ref=f11e487]: "Auditing Authority: African Development Engineering Forum"
+                - heading "Heavy Infrastructure Excellence Award" [level=3] [ref=f11e488]
+                - paragraph [ref=f11e489]: Recognized for the rapid, flood-resistant construction of Phase One of the Falea Bauxite & Mineral Corridor in southwestern Mali (commenced 2023).
+              - generic [ref=f11e491]:
+                - generic [ref=f11e492]: Fiza Corporation
+                - generic [ref=f11e493]: Verified Historical Record
+            - article [ref=f11e494]:
+              - generic [ref=f11e495]:
+                - generic [ref=f11e496]:
+                  - generic [ref=f11e497]:
+                    - generic [ref=f11e498]: "2023"
+                    - generic [ref=f11e499]: Certifications
+                  - generic [ref=f11e501]: "Auditing Authority: SGS Global Services"
+                - heading "ISO 9001:2015 Quality Management Systems" [level=3] [ref=f11e502]
+                - paragraph [ref=f11e503]: Covers turnkey mineral processing plant fabrication, machine remanufacturing, and heavy-haul rail maintenance.
+              - generic [ref=f11e505]:
+                - generic [ref=f11e506]:
+                  - generic [ref=f11e507]: Record Status
+                  - generic [ref=f11e508]: Pending Verification
+                - generic [ref=f11e509]: Official credential available upon formal inquiry
+            - article [ref=f11e510]:
+              - generic [ref=f11e511]:
+                - generic [ref=f11e512]:
+                  - generic [ref=f11e513]:
+                    - generic [ref=f11e514]: "2022"
+                    - generic [ref=f11e515]: Certifications
+                  - generic [ref=f11e517]: "Auditing Authority: DNV GL"
+                - heading "ISO 14001:2015 Environmental Stewardship" [level=3] [ref=f11e518]
+                - paragraph [ref=f11e519]: Tailings dam structural monitoring protocols and comprehensive post-extraction land contouring and reforestation frameworks.
+              - generic [ref=f11e521]:
+                - generic [ref=f11e522]:
+                  - generic [ref=f11e523]: Record Status
+                  - generic [ref=f11e524]: Pending Verification
+                - generic [ref=f11e525]: Official credential available upon formal inquiry
+            - article [ref=f11e526]:
+              - generic [ref=f11e527]:
+                - generic [ref=f11e528]:
+                  - generic [ref=f11e529]:
+                    - generic [ref=f11e530]: "2021"
+                    - generic [ref=f11e531]: Partnerships
+                  - generic [ref=f11e533]: "Auditing Authority: International Port Authorities"
+                - heading "Pan-African Mineral Logistics Syndicate" [level=3] [ref=f11e534]
+                - paragraph [ref=f11e535]: Priority deep-water berth access and rail connection rights established at two West African and two East African commercial maritime hubs.
+              - generic [ref=f11e537]:
+                - generic [ref=f11e538]: Fiza Corporation
+                - generic [ref=f11e539]: Verified Historical Record
+        - generic [ref=f11e540]:
+          - generic [ref=f11e541]:
+            - generic [ref=f11e542]: Operational Benchmarks
+            - heading "Operational Milestones" [level=2] [ref=f11e543]
+            - paragraph [ref=f11e544]: Internal production thresholds, earthmoving volumes, and equipment availability benchmarks achieved across company operations.
+          - article [ref=f11e546]:
+            - generic [ref=f11e547]:
+              - generic [ref=f11e548]:
+                - generic [ref=f11e549]:
+                  - generic [ref=f11e550]: "2023"
+                  - generic [ref=f11e551]: Milestones
+                - generic [ref=f11e553]: "Operational Standard: Internal Operational Milestone"
+              - heading "38M Tonnes Moved Annually" [level=3] [ref=f11e554]
+              - paragraph [ref=f11e555]: Achieved annual earthmoving volume of 38M Tonnes across open-pit concessions with heavy fleet availability maintained above 94%+.
+            - generic [ref=f11e557]:
+              - generic [ref=f11e558]: Fiza Corporation
+              - generic [ref=f11e559]: Verified Historical Record
+  - contentinfo [ref=f11e213]:
+    - generic [ref=f11e214]:
+      - generic [ref=f11e215]:
+        - generic [ref=f11e216]:
+          - link "FIZA" [ref=f11e217] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f11e220]: "|"
+          - generic [ref=f11e221]: Heavy Engineering, Mining & Rail Infrastructure
+        - navigation [ref=f11e222]:
+          - link "Company" [ref=f11e223] [cursor=pointer]:
+            - /url: /company
+          - link "Services" [ref=f11e224] [cursor=pointer]:
+            - /url: /capabilities
+          - link "Projects" [ref=f11e225] [cursor=pointer]:
+            - /url: /projects
+          - link "Fleet" [ref=f11e226] [cursor=pointer]:
+            - /url: /products
+          - link "Newsroom" [ref=f11e227] [cursor=pointer]:
+            - /url: /news
+          - link "Contact" [ref=f11e228] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=f11e229]:
+        - generic [ref=f11e230]:
+          - generic [ref=f11e231]:
+            - text: "Dubai HQ:"
+            - link "+971 4 362 8800" [ref=f11e232] [cursor=pointer]:
+              - /url: tel:+97143628800
+          - generic [ref=f11e233]: ·
+          - link "info@fizaengineering.com" [ref=f11e235] [cursor=pointer]:
+            - /url: mailto:info@fizaengineering.com
+          - generic [ref=f11e236]: ·
+          - generic [ref=f11e237]: DIFC Gate Precinct, Dubai · Africa
+        - generic [ref=f11e238]:
+          - generic [ref=f11e239]: © 2026 Fiza Engineering Corporation.
+          - link "Privacy" [ref=f11e240] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=f11e241] [cursor=pointer]:
+            - /url: /terms
+          - link "Accreditations" [ref=f11e242] [cursor=pointer]:
+            - /url: /achievements
+  - alert [ref=f11e243]: Certifications & Awards | Fiza Engineering

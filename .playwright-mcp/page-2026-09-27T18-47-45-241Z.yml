@@ -1,0 +1,187 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "FIZA Engineering Corporation" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img [aria-hidden] [ref=e4]:
+        - generic [ref=e6]: F
+      - generic [ref=e8]:
+        - generic [ref=e9]: FIZA
+        - generic [ref=e12]: Engineering Corporation
+    - navigation [ref=e13]:
+      - link "Company" [ref=e15] [cursor=pointer]:
+        - /url: /company
+      - link "Services" [ref=e19] [cursor=pointer]:
+        - /url: /capabilities
+      - link "Projects" [ref=e21] [cursor=pointer]:
+        - /url: /projects
+      - link "Products" [ref=e22] [cursor=pointer]:
+        - /url: /products
+      - link "News" [ref=e23] [cursor=pointer]:
+        - /url: /news
+      - link "Contact" [ref=e24] [cursor=pointer]:
+        - /url: /contact
+    - link "Get in Touch" [ref=e26] [cursor=pointer]:
+      - /url: /contact
+  - main [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - img "Fiza Engineering heavy civil works, industrial infrastructure, and arterial transport corridor operations" [ref=e30]
+        - generic [ref=e32]:
+          - heading "Core Operations & Services" [level=1] [ref=e33]
+          - paragraph [ref=e34]: Direct open-pit concessions, heavy-haul railway corridors, turnkey processing plants, and equipment rebuilding operations deployed across Africa.
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - heading "Unified Operating Portfolio" [level=2] [ref=e38]
+          - paragraph [ref=e39]: Direct open-pit extraction, export rail corridors, modular plant fabrication, and fleet remanufacturing operating as a single integrated engineering system across Africa.
+        - generic [ref=e40]:
+          - link "Mining Services 01 Division 01 Mining Services We provide turnkey pit-to-port mining operations using our fleet of 450+ heavy earthmoving machines across West and Central Africa. Our work spans geological validation, round-the-clock overburden stripping, and site restoration. Annual Material Moved 38M tonnes Explore Mining Operations" [ref=e41] [cursor=pointer]:
+            - /url: /capabilities/mining-services
+            - img "Mining Services" [ref=e43]
+            - generic [ref=e44]:
+              - generic [ref=e45]: "01"
+              - generic [ref=e46]: Division 01
+            - generic [ref=e47]:
+              - heading "Mining Services" [level=3] [ref=e48]
+              - paragraph [ref=e49]: We provide turnkey pit-to-port mining operations using our fleet of 450+ heavy earthmoving machines across West and Central Africa. Our work spans geological validation, round-the-clock overburden stripping, and site restoration.
+              - generic [ref=e50]:
+                - generic [ref=e51]: Annual Material Moved
+                - generic [ref=e52]: 38M tonnes
+              - generic [ref=e53]: Explore Mining Operations
+          - link "Mineral Trading 02 Division 02 Mineral Trading We connect African extraction operations directly to industrial end-users across Asia, Europe, and the Middle East. We supply bulk bauxite, iron ore (hematite and magnetite), and copper (cathode and blister) to international refineries through long-term agreements. Annual Traded Volume 4.2M tonnes Explore Mineral Trading" [ref=e57] [cursor=pointer]:
+            - /url: /capabilities/mineral-trading
+            - img "Mineral Trading" [ref=e59]
+            - generic [ref=e60]:
+              - generic [ref=e61]: "02"
+              - generic [ref=e62]: Division 02
+            - generic [ref=e63]:
+              - heading "Mineral Trading" [level=3] [ref=e64]
+              - paragraph [ref=e65]: We connect African extraction operations directly to industrial end-users across Asia, Europe, and the Middle East. We supply bulk bauxite, iron ore (hematite and magnetite), and copper (cathode and blister) to international refineries through long-term agreements.
+              - generic [ref=e66]:
+                - generic [ref=e67]: Annual Traded Volume
+                - generic [ref=e68]: 4.2M tonnes
+              - generic [ref=e69]: Explore Mineral Trading
+          - link "Railway Solutions 03 Division 03 Railway Solutions We build and maintain heavy-haul railway corridors connecting inland mineral deposits to ocean ports. Our services include track laying, ballast tamping, rolling stock maintenance, and corridor operation rated for 32-tonne axle loads. Track Maintained 1,140 km Explore Railway Corridors" [ref=e73] [cursor=pointer]:
+            - /url: /capabilities/railway-solutions
+            - img "Railway Solutions" [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e77]: "03"
+              - generic [ref=e78]: Division 03
+            - generic [ref=e79]:
+              - heading "Railway Solutions" [level=3] [ref=e80]
+              - paragraph [ref=e81]: We build and maintain heavy-haul railway corridors connecting inland mineral deposits to ocean ports. Our services include track laying, ballast tamping, rolling stock maintenance, and corridor operation rated for 32-tonne axle loads.
+              - generic [ref=e82]:
+                - generic [ref=e83]: Track Maintained
+                - generic [ref=e84]: 1,140 km
+              - generic [ref=e85]: Explore Railway Corridors
+          - link "Heavy Infrastructure 04 Division 04 Heavy Infrastructure We engineer and construct heavy civil works for industrial sites. Our capabilities include 90-tonne class haul roads, reinforced concrete river bridges, mass foundations, and bulk water management structures. Haul Roads Built 850+ km Explore Heavy Infrastructure" [ref=e89] [cursor=pointer]:
+            - /url: /capabilities/infrastructure
+            - img "Heavy Infrastructure" [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e93]: "04"
+              - generic [ref=e94]: Division 04
+            - generic [ref=e95]:
+              - heading "Heavy Infrastructure" [level=3] [ref=e96]
+              - paragraph [ref=e97]: We engineer and construct heavy civil works for industrial sites. Our capabilities include 90-tonne class haul roads, reinforced concrete river bridges, mass foundations, and bulk water management structures.
+              - generic [ref=e98]:
+                - generic [ref=e99]: Haul Roads Built
+                - generic [ref=e100]: 850+ km
+              - generic [ref=e101]: Explore Heavy Infrastructure
+          - link "Turnkey Industrial Plants 05 Division 05 Turnkey Industrial Plants We design, fabricate, and assemble modular mineral processing facilities from greenfield sites to full commissioning. Plants include multi-stage crushing circuits, magnetic separation, flotation units, and automated control centers. Commissioned Facilities 14 facilities Explore Turnkey Plants" [ref=e105] [cursor=pointer]:
+            - /url: /capabilities/turnkey-plants
+            - img "Turnkey Industrial Plants" [ref=e107]
+            - generic [ref=e108]:
+              - generic [ref=e109]: "05"
+              - generic [ref=e110]: Division 05
+            - generic [ref=e111]:
+              - heading "Turnkey Industrial Plants" [level=3] [ref=e112]
+              - paragraph [ref=e113]: We design, fabricate, and assemble modular mineral processing facilities from greenfield sites to full commissioning. Plants include multi-stage crushing circuits, magnetic separation, flotation units, and automated control centers.
+              - generic [ref=e114]:
+                - generic [ref=e115]: Commissioned Facilities
+                - generic [ref=e116]: 14 facilities
+              - generic [ref=e117]: Explore Turnkey Plants
+          - link "Commercial Agriculture 06 Division 06 Commercial Agriculture We develop large-scale agricultural projects across arable land. Our work includes bush clearing, land leveling, center-pivot irrigation systems, grain storage silos, and agro-processing facilities. Arable Land Developed 45,000 hectares Explore Commercial Agriculture" [ref=e121] [cursor=pointer]:
+            - /url: /capabilities/agriculture
+            - img "Commercial Agriculture" [ref=e123]
+            - generic [ref=e124]:
+              - generic [ref=e125]: "06"
+              - generic [ref=e126]: Division 06
+            - generic [ref=e127]:
+              - heading "Commercial Agriculture" [level=3] [ref=e128]
+              - paragraph [ref=e129]: We develop large-scale agricultural projects across arable land. Our work includes bush clearing, land leveling, center-pivot irrigation systems, grain storage silos, and agro-processing facilities.
+              - generic [ref=e130]:
+                - generic [ref=e131]: Arable Land Developed
+                - generic [ref=e132]: 45,000 hectares
+              - generic [ref=e133]: Explore Commercial Agriculture
+          - link "Equipment Procurement & Rebuild 07 Division 07 Equipment Procurement & Rebuild We source, inspect, and deliver heavy mining machinery from global channels. Our technical teams rebuild powertrains, supply replacement components, and manage transport directly to remote project sites. Delivered Machinery 850+ machines Explore Machinery Rebuild" [ref=e137] [cursor=pointer]:
+            - /url: /capabilities/equipment-procurement
+            - img "Equipment Procurement & Rebuild" [ref=e139]
+            - generic [ref=e140]:
+              - generic [ref=e141]: "07"
+              - generic [ref=e142]: Division 07
+            - generic [ref=e143]:
+              - heading "Equipment Procurement & Rebuild" [level=3] [ref=e144]
+              - paragraph [ref=e145]: We source, inspect, and deliver heavy mining machinery from global channels. Our technical teams rebuild powertrains, supply replacement components, and manage transport directly to remote project sites.
+              - generic [ref=e146]:
+                - generic [ref=e147]: Delivered Machinery
+                - generic [ref=e148]: 850+ machines
+              - generic [ref=e149]: Explore Machinery Rebuild
+          - link "Industrial Microgrids 08 Division 08 Industrial Microgrids We build and operate dedicated power generation systems for remote industrial sites. Our installations combine utility-scale solar arrays, heavy fuel oil or diesel generators, and battery storage to ensure continuous power. Generation Capacity 185 MW Explore Industrial Power" [ref=e153] [cursor=pointer]:
+            - /url: /capabilities/industrial-power
+            - img "Industrial Microgrids" [ref=e155]
+            - generic [ref=e156]:
+              - generic [ref=e157]: "08"
+              - generic [ref=e158]: Division 08
+            - generic [ref=e159]:
+              - heading "Industrial Microgrids" [level=3] [ref=e160]
+              - paragraph [ref=e161]: We build and operate dedicated power generation systems for remote industrial sites. Our installations combine utility-scale solar arrays, heavy fuel oil or diesel generators, and battery storage to ensure continuous power.
+              - generic [ref=e162]:
+                - generic [ref=e163]: Generation Capacity
+                - generic [ref=e164]: 185 MW
+              - generic [ref=e165]: Explore Industrial Power
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - generic [ref=e172]: Direct Engineering Procurement
+          - heading "Initiate Project Consultation" [level=2] [ref=e175]
+          - paragraph [ref=e176]: Connect directly with our engineering project managers and commercial teams to evaluate concession feasibility, fleet requirements, and logistical corridors.
+        - link "Consult Our Engineers" [ref=e177] [cursor=pointer]:
+          - /url: /contact?type=mining-services
+  - contentinfo [ref=e181]:
+    - generic [ref=e182]:
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - link "FIZA" [ref=e185] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e188]: "|"
+          - generic [ref=e189]: Heavy Engineering, Mining & Rail Infrastructure
+        - navigation [ref=e190]:
+          - link "Company" [ref=e191] [cursor=pointer]:
+            - /url: /company
+          - link "Services" [ref=e192] [cursor=pointer]:
+            - /url: /capabilities
+          - link "Projects" [ref=e193] [cursor=pointer]:
+            - /url: /projects
+          - link "Fleet" [ref=e194] [cursor=pointer]:
+            - /url: /products
+          - link "Newsroom" [ref=e195] [cursor=pointer]:
+            - /url: /news
+          - link "Contact" [ref=e196] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=e197]:
+        - generic [ref=e198]:
+          - generic [ref=e199]:
+            - text: "Dubai HQ:"
+            - link "+971 4 362 8800" [ref=e200] [cursor=pointer]:
+              - /url: tel:+97143628800
+          - generic [ref=e201]: ·
+          - link "info@fizaengineering.com" [ref=e203] [cursor=pointer]:
+            - /url: mailto:info@fizaengineering.com
+          - generic [ref=e204]: ·
+          - generic [ref=e205]: DIFC Gate Precinct, Dubai · Africa
+        - generic [ref=e206]:
+          - generic [ref=e207]: © 2026 Fiza Engineering Corporation.
+          - link "Privacy" [ref=e208] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e209] [cursor=pointer]:
+            - /url: /terms
+          - link "Accreditations" [ref=e210] [cursor=pointer]:
+            - /url: /achievements

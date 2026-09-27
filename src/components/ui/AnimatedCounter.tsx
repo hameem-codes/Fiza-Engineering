@@ -6,6 +6,9 @@ import { cn } from "@/lib/utils";
 interface AnimatedCounterProps {
   target: number;
   suffix?: string;
+  prefix?: string;
+  decimals?: number;
+  formatCommas?: boolean;
   duration?: number;
   delay?: number;
   trigger?: boolean;
@@ -23,6 +26,9 @@ function easeOutCubic(t: number): number {
 export function AnimatedCounter({
   target,
   suffix = "",
+  prefix = "",
+  decimals = 0,
+  formatCommas = false,
   duration = 1800,
   delay = 0,
   trigger,
@@ -76,7 +82,8 @@ export function AnimatedCounter({
           const elapsed = currentTime - startTime;
           const progress = Math.min(1, Math.max(0, elapsed / duration));
           const eased = easeOutCubic(progress);
-          const nextVal = Math.round(eased * target);
+          const rawVal = eased * target;
+          const nextVal = decimals > 0 ? parseFloat(rawVal.toFixed(decimals)) : Math.round(rawVal);
 
           setCurrent(nextVal);
 
@@ -130,11 +137,9 @@ export function AnimatedCounter({
         const [entry] = entries;
         if (entry.isIntersecting) {
           startAnimation();
-        } else {
-          resetAnimation();
         }
       },
-      { threshold: 0, rootMargin: "0px 0px 50px 0px" }
+      { threshold: 0.15, rootMargin: "0px 0px -20px 0px" }
     );
 
     observer.observe(element);
@@ -144,15 +149,26 @@ export function AnimatedCounter({
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       if (animationFrameRef.current) cancelAnimationFrame(animationFrameRef.current);
     };
-  }, [trigger, target, duration, delay]);
+  }, [trigger, target, duration, delay, decimals]);
+
+  const formattedDisplay = () => {
+    let str = decimals > 0 ? current.toFixed(decimals) : current.toString();
+    if (formatCommas) {
+      const parts = str.split(".");
+      parts[0] = parseInt(parts[0], 10).toLocaleString();
+      str = parts.join(".");
+    }
+    return str;
+  };
 
   return (
     <span
       ref={elementRef}
       className={cn("inline-flex items-baseline tabular-nums", className)}
-      aria-label={`${target}${suffix}`}
+      aria-label={`${prefix}${target}${suffix}`}
     >
-      <span className={cn(isLanded && "animate-counter-land")}>{current}</span>
+      {prefix && <span>{prefix}</span>}
+      <span className={cn(isLanded && "animate-counter-land")}>{formattedDisplay()}</span>
       {suffix && <span>{suffix}</span>}
     </span>
   );

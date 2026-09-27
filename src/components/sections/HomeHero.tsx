@@ -104,36 +104,28 @@ export function HomeHero() {
             );
           })}
 
-          {/* Subtle Industrial Mesh Texture */}
-          <div
-            className="absolute inset-0 opacity-20 pointer-events-none z-[2]"
+          {/* Professional Directional Scrim Overlay: Darker on text-heavy left, photographic breathing room on right */}
+          <div 
+            className="absolute inset-0 z-[2] pointer-events-none"
             style={{
-              backgroundImage: "radial-gradient(rgba(242, 240, 235, 0.35) 1px, transparent 1px)",
-              backgroundSize: "28px 28px",
+              background: `
+                linear-gradient(to right, rgba(20, 20, 18, 0.96) 0%, rgba(20, 20, 18, 0.88) 45%, rgba(20, 20, 18, 0.5) 75%, rgba(20, 20, 18, 0.25) 100%),
+                linear-gradient(to top, rgba(20, 20, 18, 0.9) 0%, transparent 40%, rgba(20, 20, 18, 0.6) 100%)
+              `
             }}
           />
-          {/* Cinematic Dark Coal Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-earth-black via-earth-black/70 to-earth-black/35 z-[2]" />
         </div>
 
         {/* Hero Copy & Actions */}
         <div className="relative z-10 max-w-content mx-auto w-full px-6 md:px-12 pb-14 md:pb-20 pt-40 md:pt-48">
           <div className="max-w-3xl">
-            {/* Overline with established date from siteFacts */}
-            <div className="flex items-center gap-2.5 mb-5">
-              <span className="w-2.5 h-2.5 bg-oxide-red inline-block" />
-              <span className="font-sans text-xs uppercase tracking-wide text-dust-tan font-semibold">
-                Est. {SITE_FACTS.foundedYear} · {SITE_FACTS.yearsInBusinessLabel} Direct Execution
-              </span>
-            </div>
-
             {/* Specific Headline naming actual operations */}
-            <h1 className="text-display-lg sm:text-[3.25rem] md:text-[3.75rem] font-medium text-iron-white tracking-tight leading-[0.96] mb-5">
+            <h1 className="font-heading text-display-lg sm:text-[3.25rem] md:text-[3.75rem] font-medium text-iron-white tracking-tight leading-[1.08] mb-5">
               Mining, rail and heavy civil works across Africa.
             </h1>
 
-            {/* Concise Subtext: exactly 16 words (max 20 words) */}
-            <p className="text-body-lg text-dust-tan max-w-2xl mb-8 leading-relaxed font-normal">
+            {/* Concise Subtext */}
+            <p className="text-body-lg text-white/95 max-w-2xl mb-8 leading-relaxed font-normal">
               Direct open-pit concessions, heavy-haul railway corridors, and turnkey processing plants operating across key African resource jurisdictions.
             </p>
 
@@ -141,13 +133,13 @@ export function HomeHero() {
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 href="/projects"
-                className="btn-primary !bg-oxide-red hover:!bg-earth-black text-iron-white text-xs py-3.5 px-7 font-sans uppercase tracking-wide font-semibold shadow-sm transition-colors"
+                className="btn-primary !bg-oxide-red hover:!bg-iron-white hover:!text-earth-black text-iron-white text-xs py-3.5 px-7 font-sans uppercase tracking-wider font-semibold shadow-sm transition-colors"
               >
                 View active projects
               </Link>
               <Link
                 href="/capabilities"
-                className="btn-secondary !border-iron-white !text-iron-white hover:!bg-iron-white hover:!text-earth-black text-xs py-3.5 px-7 font-sans uppercase tracking-wide font-semibold transition-colors"
+                className="btn-secondary !border-iron-white/60 !text-iron-white hover:!bg-iron-white hover:!text-earth-black hover:!border-iron-white text-xs py-3.5 px-7 font-sans uppercase tracking-wider font-semibold transition-colors"
               >
                 See our services
               </Link>

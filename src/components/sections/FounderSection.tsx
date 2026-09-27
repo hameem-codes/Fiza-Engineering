@@ -22,11 +22,7 @@ export function FounderSection() {
 
           {/* Right: Leadership Profile & Quote */}
           <div className="lg:col-span-8">
-            <span className="text-label text-earth-black font-sans uppercase tracking-wide font-semibold block mb-2">
-              Executive Leadership
-            </span>
-
-            <h2 className="text-display-lg sm:text-[2.5rem] font-medium text-earth-black leading-[1.05] mb-2">
+            <h2 className="text-display-lg sm:text-[2.5rem] font-medium text-earth-black leading-[1.08] mb-2">
               Muhammed Farooghuddin
             </h2>
             <span className="font-sans text-xs uppercase tracking-wide text-oxide-red font-semibold block mb-5">

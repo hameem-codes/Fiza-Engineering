@@ -11,14 +11,7 @@ export function CompanyEditorial() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Text Block (7 Columns) */}
           <div className="lg:col-span-7">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="w-2 h-2 bg-oxide-red inline-block" />
-              <span className="text-label text-earth-black font-sans uppercase tracking-wide font-semibold">
-                About Fiza Engineering
-              </span>
-            </div>
-
-            <h2 className="text-display-lg sm:text-[2.6rem] font-medium text-earth-black leading-[1.05] mb-6">
+            <h2 className="text-display-lg sm:text-[2.6rem] font-medium text-earth-black leading-[1.08] mb-6">
               Engineering heavy infrastructure and direct mineral supply chains.
             </h2>
 

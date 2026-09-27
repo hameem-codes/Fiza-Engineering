@@ -123,10 +123,10 @@ export default function CapabilityDetailPage({ params }: Props) {
           >
             ← All Services
           </Link>
-          <h1 className="text-display-lg sm:text-[3.5rem] font-medium text-iron-white leading-[0.95]">
+          <h1 className="text-display-lg sm:text-[3.5rem] font-medium text-iron-white leading-[1.08]">
             {capability.title}
           </h1>
-          <p className="text-body-lg text-dust-tan max-w-2xl mt-4 font-normal">
+          <p className="text-body-lg text-white/95 max-w-2xl mt-4 font-normal">
             {capability.tagline}
           </p>
           <div className="mt-6">
@@ -145,9 +145,6 @@ export default function CapabilityDetailPage({ params }: Props) {
         <div className="max-w-content mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">
-              <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-3 font-semibold">
-                Service Overview
-              </span>
               <p className="text-body-lg text-quarry-grey leading-relaxed">
                 {capability.description}
               </p>
@@ -173,10 +170,7 @@ export default function CapabilityDetailPage({ params }: Props) {
       <section className="w-full bg-[#E8E5DD] py-20 md:py-28 border-b border-slab-grey">
         <div className="max-w-content mx-auto px-6 md:px-12">
           <div className="mb-14">
-            <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-2 font-semibold">
-              Operational Scope
-            </span>
-            <h2 className="text-display-lg font-medium text-earth-black leading-[0.95]">
+            <h2 className="text-display-lg font-medium text-earth-black leading-[1.08]">
               Core Scope & Deliverables
             </h2>
           </div>
@@ -213,10 +207,7 @@ export default function CapabilityDetailPage({ params }: Props) {
           <div className="max-w-content mx-auto px-6 md:px-12">
             <div className="flex justify-between items-end mb-12">
               <div>
-                <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-2 font-semibold">
-                  Field Execution
-                </span>
-                <h2 className="text-heading-1 font-medium text-earth-black">
+                <h2 className="text-heading-1 font-medium text-earth-black leading-[1.08]">
                   Related Projects
                 </h2>
               </div>

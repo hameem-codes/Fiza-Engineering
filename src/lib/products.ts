@@ -100,7 +100,7 @@ export const PRODUCTS: ProductItem[] = [
     category: "Heavy Mining Fleet",
     // TODO: OWNER TO CONFIRM MANUFACTURER
     modelNumber: "FX-980-HD",
-    heroImage: "https://images.unsplash.com/photo-1580983218765-f663bec07b37?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "/images/capabilities/mining-services.jpg",
     imageAlt: "FIZA-980 massive hydraulic excavator actively digging and loading in an open-pit mine",
     // TODO: OWNER TO CONFIRM MANUFACTURER
     verified: false,
@@ -134,7 +134,7 @@ export const PRODUCTS: ProductItem[] = [
     category: "Turnkey Plant Modules",
     // TODO: OWNER TO CONFIRM MANUFACTURER
     modelNumber: "JC-1200-MOD",
-    heroImage: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "/images/capabilities/turnkey-plants.jpg",
     imageAlt: "Large industrial jaw crusher and primary crushing station with conveyor belts",
     // TODO: OWNER TO CONFIRM MANUFACTURER
     verified: false,
@@ -168,7 +168,7 @@ export const PRODUCTS: ProductItem[] = [
     category: "Railway Solutions",
     // TODO: OWNER TO CONFIRM MANUFACTURER
     modelNumber: "FL-4400-AC",
-    heroImage: "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "/images/capabilities/railway-solutions.jpg",
     imageAlt: "FIZA-4400 large freight locomotive pulling cargo wagons on industrial railway tracks",
     // TODO: OWNER TO CONFIRM MANUFACTURER
     verified: false,
@@ -235,7 +235,7 @@ export const TRADED_MINERALS: ProductItem[] = [
     slug: "mineral-bauxite",
     name: "Metallurgical Bauxite Ore",
     category: "Traded Minerals",
-    heroImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "/images/projects/project_katanga.jpg",
     imageAlt: "Large stockpile of reddish-brown metallurgical bauxite ore at port terminal",
     verified: true,
     grade: "45% - 48% Al₂O₃ (Total Alumina), Reactive Silica < 2.5%",
@@ -268,8 +268,8 @@ export const TRADED_MINERALS: ProductItem[] = [
     slug: "mineral-iron-ore",
     name: "Direct Shipping Iron Ore (Hematite & Magnetite)",
     category: "Traded Minerals",
-    heroImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1600&auto=format&fit=crop",
-    imageAlt: "Close-up of direct shipping iron ore lumps and hematite metallic chunks",
+    heroImage: "/images/projects/project_bamako.jpg",
+    imageAlt: "Direct shipping iron ore lumps and hematite metallic chunks consolidated at bulk rail heads",
     verified: true,
     grade: "62% - 64.5% Fe (Lump & Sinter Fines)",
     origin: "West & Central African Extraction Corridors",
@@ -301,7 +301,7 @@ export const TRADED_MINERALS: ProductItem[] = [
     slug: "mineral-copper-cathode",
     name: "Grade-A Copper Cathode & Copper Blister",
     category: "Traded Minerals",
-    heroImage: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "/images/capabilities/mineral-trading.jpg",
     imageAlt: "Stacked Grade-A copper cathode plates bundled for export",
     verified: true,
     grade: "Grade-A 99.9935% Cu Cathode & 98.5%+ Copper Blister Ingots",

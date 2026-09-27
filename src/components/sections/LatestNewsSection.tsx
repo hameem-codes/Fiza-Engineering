@@ -15,10 +15,7 @@ export function LatestNewsSection() {
       <div className="max-w-content mx-auto px-6 md:px-12 py-20 md:py-28">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
           <div>
-            <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-2 font-semibold">
-              Operational Updates
-            </span>
-            <h2 className="text-display-lg font-medium text-earth-black leading-[0.95]">
+            <h2 className="text-display-lg font-medium text-earth-black leading-[1.08]">
               Latest News & Dispatches
             </h2>
           </div>

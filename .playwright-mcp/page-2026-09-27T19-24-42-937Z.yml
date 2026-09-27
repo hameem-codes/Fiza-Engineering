@@ -1,0 +1,184 @@
+- generic [ref=f11e1]:
+  - banner [ref=f11e2]:
+    - link "F FIZA Engineering Corporation" [ref=f11e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f11e4]: F
+      - generic [ref=f11e5]:
+        - generic [ref=f11e6]: FIZA
+        - generic [ref=f11e8]: Engineering Corporation
+    - navigation [ref=f11e9]:
+      - link "Company" [ref=f11e10] [cursor=pointer]:
+        - /url: /company
+      - link "Services" [ref=f11e11] [cursor=pointer]:
+        - /url: /capabilities
+      - link "Projects" [active] [ref=f11e12] [cursor=pointer]:
+        - /url: /projects
+      - link "Products" [ref=f11e13] [cursor=pointer]:
+        - /url: /products
+      - link "Certifications" [ref=f11e15] [cursor=pointer]:
+        - /url: /achievements
+      - link "News" [ref=f11e16] [cursor=pointer]:
+        - /url: /news
+      - link "Contact" [ref=f11e17] [cursor=pointer]:
+        - /url: /contact
+    - link "Get in Touch" [ref=f11e19] [cursor=pointer]:
+      - /url: /contact
+  - main [ref=f11e20]:
+    - generic [ref=f11e561]:
+      - generic [ref=f11e562]:
+        - img "Fiza Engineering Falea bauxite corridor heavy earthmoving, open-pit benches, and haul road infrastructure" [ref=f11e563]
+        - generic [ref=f11e565]:
+          - heading "Project Portfolio" [level=1] [ref=f11e566]
+          - paragraph [ref=f11e567]: Active open-pit mining concessions, heavy-haul railway track rehabilitation, and turnkey processing plants operating across Mali, the DRC, and Madagascar.
+      - generic [ref=f11e570]:
+        - generic [ref=f11e571]:
+          - generic [ref=f11e572]: "Status:"
+          - generic [ref=f11e573]:
+            - button "ALL" [ref=f11e574] [cursor=pointer]
+            - button "ACTIVE" [ref=f11e575] [cursor=pointer]
+            - button "IN DEVELOPMENT" [ref=f11e576] [cursor=pointer]
+            - button "COMPLETED" [ref=f11e577] [cursor=pointer]
+        - generic [ref=f11e578]:
+          - generic [ref=f11e579]:
+            - combobox "Filter by Country" [ref=f11e580] [cursor=pointer]:
+              - option "All Jurisdictions" [selected]
+              - option "Mali"
+              - option "Democratic Republic of Congo"
+              - option "Madagascar"
+            - generic: ▼
+          - generic [ref=f11e581]:
+            - combobox "Filter by Sector" [ref=f11e582] [cursor=pointer]:
+              - option "All Sectors" [selected]
+              - option "Mining Services & Rail"
+              - option "Turnkey Plants"
+              - option "Railway Solutions"
+              - option "Infrastructure"
+              - option "Infrastructure & Mining"
+              - option "Commercial Agriculture"
+            - generic: ▼
+      - generic [ref=f11e585]:
+        - link "Open-pit bauxite mine haul road with heavy-duty dump trucks in Falea, Mali Mali Active Operation Mining Services & Rail Falea Bauxite & Mineral Corridor Turnkey development of an 8.5 MTPA bauxite deposit including a 94-kilometer dedicated heavy haul access road and river barge loading terminal. Annual Ore Moved 8.5M Tonnes Explore Project Dossier" [ref=f11e586] [cursor=pointer]:
+          - /url: /projects/falea-bauxite-corridor
+          - img "Open-pit bauxite mine haul road with heavy-duty dump trucks in Falea, Mali" [ref=f11e588]
+          - generic [ref=f11e589]:
+            - generic [ref=f11e590]: Mali
+            - generic [ref=f11e592]: Active Operation
+          - generic [ref=f11e594]:
+            - generic [ref=f11e595]: Mining Services & Rail
+            - heading "Falea Bauxite & Mineral Corridor" [level=2] [ref=f11e596]
+            - paragraph [ref=f11e597]: Turnkey development of an 8.5 MTPA bauxite deposit including a 94-kilometer dedicated heavy haul access road and river barge loading terminal.
+            - generic [ref=f11e598]:
+              - generic [ref=f11e599]: Annual Ore Moved
+              - generic [ref=f11e600]: 8.5M Tonnes
+            - generic [ref=f11e601]: Explore Project Dossier
+        - link "Overhead view of a large industrial mineral processing plant and crusher conveyor in Katanga, DRC DR Congo Active Operation Turnkey Plants Katanga Copper-Cobalt Plant Engineering, procurement, and construction of a modular 1,500 TPH primary crushing station and dense media separation circuit. Circuit Throughput 1,500 TPH Explore Project Dossier" [ref=f11e605] [cursor=pointer]:
+          - /url: /projects/katanga-copper-processing
+          - img "Overhead view of a large industrial mineral processing plant and crusher conveyor in Katanga, DRC" [ref=f11e607]
+          - generic [ref=f11e608]:
+            - generic [ref=f11e609]: DR Congo
+            - generic [ref=f11e611]: Active Operation
+          - generic [ref=f11e613]:
+            - generic [ref=f11e614]: Turnkey Plants
+            - heading "Katanga Copper-Cobalt Plant" [level=2] [ref=f11e615]
+            - paragraph [ref=f11e616]: Engineering, procurement, and construction of a modular 1,500 TPH primary crushing station and dense media separation circuit.
+            - generic [ref=f11e617]:
+              - generic [ref=f11e618]: Circuit Throughput
+              - generic [ref=f11e619]: 1,500 TPH
+            - generic [ref=f11e620]: Explore Project Dossier
+        - link "Heavy freight train on industrial railway tracks loaded with cargo at Toamasina, Madagascar Madagascar Commissioned Railway Solutions Toamasina Bulk Mineral Rail Terminal Complete rehabilitation of a 42-kilometer heavy-haul narrow-gauge rail spur connecting inland nickel-cobalt tailings to the ocean port. Rehabilitated Track 42 Kilometers Explore Project Dossier" [ref=f11e624] [cursor=pointer]:
+          - /url: /projects/toamasina-bulk-rail-terminal
+          - img "Heavy freight train on industrial railway tracks loaded with cargo at Toamasina, Madagascar" [ref=f11e626]
+          - generic [ref=f11e627]:
+            - generic [ref=f11e628]: Madagascar
+            - generic [ref=f11e630]: Commissioned
+          - generic [ref=f11e631]:
+            - generic [ref=f11e632]: Railway Solutions
+            - heading "Toamasina Bulk Mineral Rail Terminal" [level=2] [ref=f11e633]
+            - paragraph [ref=f11e634]: Complete rehabilitation of a 42-kilometer heavy-haul narrow-gauge rail spur connecting inland nickel-cobalt tailings to the ocean port.
+            - generic [ref=f11e635]:
+              - generic [ref=f11e636]: Rehabilitated Track
+              - generic [ref=f11e637]: 42 Kilometers
+            - generic [ref=f11e638]: Explore Project Dossier
+        - link "Heavy equipment workshop and excavator depot at the Bamako Hub, Mali Mali Active Operation Infrastructure Bamako Heavy Equipment Base & Hub A 35,000 m² central depot featuring 6-bay heavy equipment rebuild workshops, bonded mineral storage, and central logistics dispatch. Depot Footprint 35,000 m² Explore Project Dossier" [ref=f11e642] [cursor=pointer]:
+          - /url: /projects/bamako-industrial-logistics-hub
+          - img "Heavy equipment workshop and excavator depot at the Bamako Hub, Mali" [ref=f11e644]
+          - generic [ref=f11e645]:
+            - generic [ref=f11e646]: Mali
+            - generic [ref=f11e648]: Active Operation
+          - generic [ref=f11e650]:
+            - generic [ref=f11e651]: Infrastructure
+            - heading "Bamako Heavy Equipment Base & Hub" [level=2] [ref=f11e652]
+            - paragraph [ref=f11e653]: A 35,000 m² central depot featuring 6-bay heavy equipment rebuild workshops, bonded mineral storage, and central logistics dispatch.
+            - generic [ref=f11e654]:
+              - generic [ref=f11e655]: Depot Footprint
+              - generic [ref=f11e656]: 35,000 m²
+            - generic [ref=f11e657]: Explore Project Dossier
+        - link "Heavy machinery building a new road through remote terrain for the Manono Critical Minerals Route, DRC DR Congo In Development Infrastructure & Mining Manono Critical Minerals Access Route Engineering a 180 km heavy-duty logistics artery connecting prospective hard-rock lithium deposits to the national rail head. Planned Roadway 180 Kilometers Explore Project Dossier" [ref=f11e661] [cursor=pointer]:
+          - /url: /projects/manono-lithium-infrastructure
+          - img "Heavy machinery building a new road through remote terrain for the Manono Critical Minerals Route, DRC" [ref=f11e663]
+          - generic [ref=f11e664]:
+            - generic [ref=f11e665]: DR Congo
+            - generic [ref=f11e667]: In Development
+          - generic [ref=f11e668]:
+            - generic [ref=f11e669]: Infrastructure & Mining
+            - heading "Manono Critical Minerals Access Route" [level=2] [ref=f11e670]
+            - paragraph [ref=f11e671]: Engineering a 180 km heavy-duty logistics artery connecting prospective hard-rock lithium deposits to the national rail head.
+            - generic [ref=f11e672]:
+              - generic [ref=f11e673]: Planned Roadway
+              - generic [ref=f11e674]: 180 Kilometers
+            - generic [ref=f11e675]: Explore Project Dossier
+        - link "Large commercial grain storage silos and agricultural processing facility in Sikasso, Mali Mali Commissioned Commercial Agriculture Sikasso Grain & Oilseed Industrial Plant Turnkey development of a 60,000-tonne automated silo grain terminal and continuous cottonseed oil solvent extraction plant. Storage Volume 60,000 Tonnes Explore Project Dossier" [ref=f11e679] [cursor=pointer]:
+          - /url: /projects/sikasso-agro-processing
+          - img "Large commercial grain storage silos and agricultural processing facility in Sikasso, Mali" [ref=f11e681]
+          - generic [ref=f11e682]:
+            - generic [ref=f11e683]: Mali
+            - generic [ref=f11e685]: Commissioned
+          - generic [ref=f11e686]:
+            - generic [ref=f11e687]: Commercial Agriculture
+            - heading "Sikasso Grain & Oilseed Industrial Plant" [level=2] [ref=f11e688]
+            - paragraph [ref=f11e689]: Turnkey development of a 60,000-tonne automated silo grain terminal and continuous cottonseed oil solvent extraction plant.
+            - generic [ref=f11e690]:
+              - generic [ref=f11e691]: Storage Volume
+              - generic [ref=f11e692]: 60,000 Tonnes
+            - generic [ref=f11e693]: Explore Project Dossier
+  - contentinfo [ref=f11e213]:
+    - generic [ref=f11e214]:
+      - generic [ref=f11e215]:
+        - generic [ref=f11e216]:
+          - link "FIZA" [ref=f11e217] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f11e220]: "|"
+          - generic [ref=f11e221]: Heavy Engineering, Mining & Rail Infrastructure
+        - navigation [ref=f11e222]:
+          - link "Company" [ref=f11e223] [cursor=pointer]:
+            - /url: /company
+          - link "Services" [ref=f11e224] [cursor=pointer]:
+            - /url: /capabilities
+          - link "Projects" [ref=f11e225] [cursor=pointer]:
+            - /url: /projects
+          - link "Fleet" [ref=f11e226] [cursor=pointer]:
+            - /url: /products
+          - link "Newsroom" [ref=f11e227] [cursor=pointer]:
+            - /url: /news
+          - link "Contact" [ref=f11e228] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=f11e229]:
+        - generic [ref=f11e230]:
+          - generic [ref=f11e231]:
+            - text: "Dubai HQ:"
+            - link "+971 4 362 8800" [ref=f11e232] [cursor=pointer]:
+              - /url: tel:+97143628800
+          - generic [ref=f11e233]: ·
+          - link "info@fizaengineering.com" [ref=f11e235] [cursor=pointer]:
+            - /url: mailto:info@fizaengineering.com
+          - generic [ref=f11e236]: ·
+          - generic [ref=f11e237]: DIFC Gate Precinct, Dubai · Africa
+        - generic [ref=f11e238]:
+          - generic [ref=f11e239]: © 2026 Fiza Engineering Corporation.
+          - link "Privacy" [ref=f11e240] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=f11e241] [cursor=pointer]:
+            - /url: /terms
+          - link "Accreditations" [ref=f11e242] [cursor=pointer]:
+            - /url: /achievements
+  - alert [ref=f11e243]: Project Portfolio | Fiza Engineering | Fiza Engineering

@@ -1,0 +1,224 @@
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - link "FIZA Engineering Corporation" [ref=f7e3] [cursor=pointer]:
+      - /url: /
+      - img [aria-hidden] [ref=f7e4]:
+        - generic [ref=f7e6]: F
+      - generic [ref=f7e8]:
+        - generic [ref=f7e9]: FIZA
+        - generic [ref=f7e12]: Engineering Corporation
+    - navigation [ref=f7e13]:
+      - link "Company" [ref=f7e15] [cursor=pointer]:
+        - /url: /company
+      - link "Services" [ref=f7e19] [cursor=pointer]:
+        - /url: /capabilities
+      - link "Projects" [ref=f7e20] [cursor=pointer]:
+        - /url: /projects
+      - link "Products" [ref=f7e21] [cursor=pointer]:
+        - /url: /products
+      - link "News" [ref=f7e23] [cursor=pointer]:
+        - /url: /news
+      - link "Contact" [ref=f7e24] [cursor=pointer]:
+        - /url: /contact
+    - link "Get in Touch" [ref=f7e26] [cursor=pointer]:
+      - /url: /contact
+  - main [ref=f7e27]:
+    - generic [ref=f7e28]:
+      - generic [ref=f7e29]:
+        - img "Fiza Engineering heavy equipment rebuild depot, powertrain overhaul, and fleet mobilization" [ref=f7e30]
+        - generic [ref=f7e32]:
+          - heading "Fleet & Equipment" [level=1] [ref=f7e33]
+          - paragraph [ref=f7e34]: Heavy hydraulic mining excavators, modular primary jaw crushers, diesel-electric locomotives, and traded industrial commodities directly owned and operated by Fiza Engineering Corporation.
+      - generic [ref=f7e37]:
+        - generic [ref=f7e38]: "Fleet Sector:"
+        - generic [ref=f7e39]:
+          - button "ALL" [ref=f7e40] [cursor=pointer]
+          - button "Heavy Mining Fleet" [ref=f7e41] [cursor=pointer]
+          - button "Turnkey Plant Modules" [ref=f7e42] [cursor=pointer]
+          - button "Railway Solutions" [ref=f7e43] [cursor=pointer]
+          - button "Traded Minerals" [ref=f7e44] [cursor=pointer]
+      - generic [ref=f7e47]:
+        - article [ref=f7e48]:
+          - img "FIZA-980 massive hydraulic excavator actively digging and loading in an open-pit mine" [ref=f7e50]
+          - generic [ref=f7e51]:
+            - generic [ref=f7e52]: Heavy Mining Fleet
+            - generic [ref=f7e54]: FX-980-HD
+          - generic [ref=f7e55]:
+            - heading [level=2] [ref=f7e56]:
+              - link "FIZA-980 Heavy Hydraulic Mining Excavator" [ref=f7e57] [cursor=pointer]:
+                - /url: /products/fiza-980-excavator
+            - paragraph [ref=f7e58]: 98-tonne hydraulic mining excavator configured for continuous open-pit overburden removal and direct truck loading. Equipped with a heavy-duty cooling radiator pack, reinforced forged boom linkages, and an air-filtered operator cabin.
+            - generic [ref=f7e59]:
+              - generic [ref=f7e60]:
+                - generic [ref=f7e61]: Operating Weight
+                - generic [ref=f7e62]: 98,500 kg
+              - generic [ref=f7e63]:
+                - generic [ref=f7e64]: Engine Power
+                - generic [ref=f7e65]: 567 kW (760 HP)
+            - link "Explore Specifications & Scope" [ref=f7e66] [cursor=pointer]:
+              - /url: /products/fiza-980-excavator
+        - article [ref=f7e70]:
+          - img "Large industrial jaw crusher and primary crushing station with conveyor belts" [ref=f7e72]
+          - generic [ref=f7e73]:
+            - generic [ref=f7e74]: Turnkey Plant Modules
+            - generic [ref=f7e76]: JC-1200-MOD
+          - generic [ref=f7e77]:
+            - heading [level=2] [ref=f7e78]:
+              - link "Modular Primary Jaw Crusher Station" [ref=f7e79] [cursor=pointer]:
+                - /url: /products/jaw-crusher-station-1200
+            - paragraph [ref=f7e80]: Skid-mounted modular primary jaw crusher station for run-of-mine ore reduction and aggregate processing. Electrical switchgear, variable frequency drives, and grease lubrication pumps are pre-wired into a standardized containerized control module.
+            - generic [ref=f7e81]:
+              - generic [ref=f7e82]:
+                - generic [ref=f7e83]: Feed Opening
+                - generic [ref=f7e84]: 1,200 mm x 950 mm
+              - generic [ref=f7e85]:
+                - generic [ref=f7e86]: Throughput Capacity
+                - generic [ref=f7e87]: 350 - 680 TPH
+            - link "Explore Specifications & Scope" [ref=f7e88] [cursor=pointer]:
+              - /url: /products/jaw-crusher-station-1200
+        - article [ref=f7e92]:
+          - img "FIZA-4400 large freight locomotive pulling cargo wagons on industrial railway tracks" [ref=f7e94]
+          - generic [ref=f7e95]:
+            - generic [ref=f7e96]: Railway Solutions
+            - generic [ref=f7e98]: FL-4400-AC
+          - generic [ref=f7e99]:
+            - heading [level=2] [ref=f7e100]:
+              - link "FIZA-4400 Heavy-Haul Diesel-Electric Freight Locomotive" [ref=f7e101] [cursor=pointer]:
+                - /url: /products/heavy-haul-locomotive-4400
+            - paragraph [ref=f7e102]: Heavy-haul Co-Co diesel-electric freight locomotive engineered for bulk mineral unit trains up to 6,000 tonnes. Incorporates AC traction motors, microprocessor wheel-slip control, and dual-gauge options for Cape gauge and standard gauge.
+            - generic [ref=f7e103]:
+              - generic [ref=f7e104]:
+                - generic [ref=f7e105]: Power Output
+                - generic [ref=f7e106]: 4,400 BHP (3,280 kW)
+              - generic [ref=f7e107]:
+                - generic [ref=f7e108]: Axle Layout
+                - generic [ref=f7e109]: Co-Co (6 Powered Axles)
+            - link "Explore Specifications & Scope" [ref=f7e110] [cursor=pointer]:
+              - /url: /products/heavy-haul-locomotive-4400
+        - article [ref=f7e114]:
+          - img "FIZA-RT100 massive rigid mining haul truck operating inside an open-pit mine" [ref=f7e116]
+          - generic [ref=f7e117]:
+            - generic [ref=f7e118]: Heavy Mining Fleet
+            - generic [ref=f7e120]: RT-100-MINER
+          - generic [ref=f7e121]:
+            - heading [level=2] [ref=f7e122]:
+              - link "FIZA-RT100 Rigid Mining Haul Truck" [ref=f7e123] [cursor=pointer]:
+                - /url: /products/fiza-rt100-haul-truck
+            - paragraph [ref=f7e124]: 95-tonne off-highway rigid dump truck for bulk open-pit mineral transport. Equipped with oil-cooled retarder braking for downhill loaded descents and a high-strength structural box-section chassis resistant to torsional stress.
+            - generic [ref=f7e125]:
+              - generic [ref=f7e126]:
+                - generic [ref=f7e127]: Nominal Payload
+                - generic [ref=f7e128]: 95,000 kg (105 US Tons)
+              - generic [ref=f7e129]:
+                - generic [ref=f7e130]: Engine Rating
+                - generic [ref=f7e131]: 783 kW (1,050 HP)
+            - link "Explore Specifications & Scope" [ref=f7e132] [cursor=pointer]:
+              - /url: /products/fiza-rt100-haul-truck
+        - article [ref=f7e136]:
+          - img "Large stockpile of reddish-brown metallurgical bauxite ore at port terminal" [ref=f7e138]
+          - generic [ref=f7e139]: Traded Minerals
+          - generic [ref=f7e142]:
+            - heading [level=2] [ref=f7e143]:
+              - link "Metallurgical Bauxite Ore" [ref=f7e144] [cursor=pointer]:
+                - /url: /capabilities/mineral-trading
+            - paragraph [ref=f7e145]: High-grade metallurgical bauxite ore extracted along dedicated transport corridors. Screened and loaded for direct river barge and deepwater maritime export.
+            - generic [ref=f7e146]:
+              - generic [ref=f7e147]:
+                - generic [ref=f7e148]: Grade
+                - generic [ref=f7e149]: 45% - 48% Al₂O₃
+              - generic [ref=f7e150]:
+                - generic [ref=f7e151]: Origin
+                - generic [ref=f7e152]: Guinea / Mali
+            - link "Inspect Mineral Off-Take" [ref=f7e153] [cursor=pointer]:
+              - /url: /capabilities/mineral-trading
+        - article [ref=f7e157]:
+          - img "Close-up of direct shipping iron ore lumps and hematite metallic chunks" [ref=f7e159]
+          - generic [ref=f7e160]: Traded Minerals
+          - generic [ref=f7e163]:
+            - heading [level=2] [ref=f7e164]:
+              - link "Direct Shipping Iron Ore (Hematite & Magnetite)" [ref=f7e165] [cursor=pointer]:
+                - /url: /capabilities/mineral-trading
+            - paragraph [ref=f7e166]: Direct shipping iron ore comprising high-purity hematite and magnetite lump and sinter fines, consolidated at regional bulk rail heads for international export.
+            - generic [ref=f7e167]:
+              - generic [ref=f7e168]:
+                - generic [ref=f7e169]: Grade
+                - generic [ref=f7e170]: 62% - 64.5% Fe
+              - generic [ref=f7e171]:
+                - generic [ref=f7e172]: Origin
+                - generic [ref=f7e173]: West Africa
+            - link "Inspect Mineral Off-Take" [ref=f7e174] [cursor=pointer]:
+              - /url: /capabilities/mineral-trading
+        - article [ref=f7e178]:
+          - img "Stacked Grade-A copper cathode plates bundled for export" [ref=f7e180]
+          - generic [ref=f7e181]: Traded Minerals
+          - generic [ref=f7e184]:
+            - heading [level=2] [ref=f7e185]:
+              - link "Grade-A Copper Cathode & Copper Blister" [ref=f7e186] [cursor=pointer]:
+                - /url: /capabilities/mineral-trading
+            - paragraph [ref=f7e187]: Electrolytically refined Grade-A copper cathodes produced from hydrometallurgical SX-EW processing in the Katanga Copperbelt, bundled and audited for bonded maritime export.
+            - generic [ref=f7e188]:
+              - generic [ref=f7e189]:
+                - generic [ref=f7e190]: Grade
+                - generic [ref=f7e191]: 99.99% Cu (Grade-A)
+              - generic [ref=f7e192]:
+                - generic [ref=f7e193]: Origin
+                - generic [ref=f7e194]: DRC (Kolwezi)
+            - link "Inspect Mineral Off-Take" [ref=f7e195] [cursor=pointer]:
+              - /url: /capabilities/mineral-trading
+        - article [ref=f7e199]:
+          - img "Dark stockpile of heavy mineral sands and ilmenite concentrate extraction" [ref=f7e201]
+          - generic [ref=f7e202]: Traded Minerals
+          - generic [ref=f7e205]:
+            - heading [level=2] [ref=f7e206]:
+              - link "Heavy Mineral Sands Ilmenite Concentrate" [ref=f7e207] [cursor=pointer]:
+                - /url: /capabilities/mineral-trading
+            - paragraph [ref=f7e208]: High-grade ilmenite heavy mineral sands concentrate beneficiated through spiral gravity separation and railed directly to coastal deepwater export berths in Madagascar.
+            - generic [ref=f7e209]:
+              - generic [ref=f7e210]:
+                - generic [ref=f7e211]: Grade
+                - generic [ref=f7e212]: 48% - 52% TiO₂
+              - generic [ref=f7e213]:
+                - generic [ref=f7e214]: Origin
+                - generic [ref=f7e215]: Madagascar (Toamasina)
+            - link "Inspect Mineral Off-Take" [ref=f7e216] [cursor=pointer]:
+              - /url: /capabilities/mineral-trading
+  - contentinfo [ref=f7e220]:
+    - generic [ref=f7e221]:
+      - generic [ref=f7e222]:
+        - generic [ref=f7e223]:
+          - link "FIZA" [ref=f7e224] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f7e227]: "|"
+          - generic [ref=f7e228]: Heavy Engineering, Mining & Rail Infrastructure
+        - navigation [ref=f7e229]:
+          - link "Company" [ref=f7e230] [cursor=pointer]:
+            - /url: /company
+          - link "Services" [ref=f7e231] [cursor=pointer]:
+            - /url: /capabilities
+          - link "Projects" [ref=f7e232] [cursor=pointer]:
+            - /url: /projects
+          - link "Fleet" [ref=f7e233] [cursor=pointer]:
+            - /url: /products
+          - link "Newsroom" [ref=f7e234] [cursor=pointer]:
+            - /url: /news
+          - link "Contact" [ref=f7e235] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=f7e236]:
+        - generic [ref=f7e237]:
+          - generic [ref=f7e238]:
+            - text: "Dubai HQ:"
+            - link "+971 4 362 8800" [ref=f7e239] [cursor=pointer]:
+              - /url: tel:+97143628800
+          - generic [ref=f7e240]: ·
+          - link "info@fizaengineering.com" [ref=f7e242] [cursor=pointer]:
+            - /url: mailto:info@fizaengineering.com
+          - generic [ref=f7e243]: ·
+          - generic [ref=f7e244]: DIFC Gate Precinct, Dubai · Africa
+        - generic [ref=f7e245]:
+          - generic [ref=f7e246]: © 2026 Fiza Engineering Corporation.
+          - link "Privacy" [ref=f7e247] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=f7e248] [cursor=pointer]:
+            - /url: /terms
+          - link "Accreditations" [ref=f7e249] [cursor=pointer]:
+            - /url: /achievements

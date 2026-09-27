@@ -29,11 +29,11 @@ export function FeaturedProjectBleed() {
             </span>
           </div>
 
-          <h2 className="text-display-lg sm:text-[3.25rem] font-medium text-iron-white leading-[0.98] mb-6">
+          <h2 className="text-display-lg sm:text-[3.25rem] font-medium text-iron-white leading-[1.08] mb-6">
             {featured.name}
           </h2>
 
-          <p className="text-body-lg text-dust-tan mb-8 leading-relaxed">
+          <p className="text-body-lg text-white/95 mb-8 leading-relaxed">
             {featured.summary}
           </p>
 

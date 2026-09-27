@@ -1,0 +1,395 @@
+- generic [active] [ref=f12e1]:
+  - banner [ref=f12e2]:
+    - link "F FIZA Engineering Corporation" [ref=f12e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f12e4]: F
+      - generic [ref=f12e5]:
+        - generic [ref=f12e6]: FIZA
+        - generic [ref=f12e8]: Engineering Corporation
+    - navigation [ref=f12e9]:
+      - link "Company" [ref=f12e10] [cursor=pointer]:
+        - /url: /company
+      - link "Services" [ref=f12e12] [cursor=pointer]:
+        - /url: /capabilities
+      - link "Projects" [ref=f12e13] [cursor=pointer]:
+        - /url: /projects
+      - link "Products" [ref=f12e14] [cursor=pointer]:
+        - /url: /products
+      - link "Certifications" [ref=f12e15] [cursor=pointer]:
+        - /url: /achievements
+      - link "News" [ref=f12e16] [cursor=pointer]:
+        - /url: /news
+      - link "Contact" [ref=f12e17] [cursor=pointer]:
+        - /url: /contact
+    - link "Get in Touch" [ref=f12e19] [cursor=pointer]:
+      - /url: /contact
+  - main [ref=f12e20]:
+    - generic [ref=f12e21]:
+      - generic [ref=f12e22]:
+        - img "Aerial view of large-scale open-pit mining operations and mineral excavation benches" [ref=f12e23]
+        - generic [ref=f12e25]:
+          - heading "Fiza Engineering Corporation" [level=1] [ref=f12e26]
+          - paragraph [ref=f12e27]: An integrated mining, heavy civil rail, and turnkey industrial engineering corporation founded in 1994, headquartered in Dubai with direct operating concessions across Africa.
+      - generic [ref=f12e30]:
+        - generic [ref=f12e31]:
+          - heading "Heavy industrial operations across key African corridors." [level=2] [ref=f12e32]
+          - generic [ref=f12e33]:
+            - paragraph [ref=f12e34]: Established in 1994 by Muhammed Farooghuddin, Fiza Engineering Corporation develops arterial infrastructure, operates extraction concessions, and manages direct commodity supply chains connecting African resource basins to international markets.
+            - paragraph [ref=f12e35]: Our operational scope includes direct open-pit mining in Mali and the Democratic Republic of Congo, heavy freight railway rehabilitation, and international physical mineral trading.
+        - generic [ref=f12e36]:
+          - img "Engineers reviewing site plans" [ref=f12e37]
+          - generic [ref=f12e38]: Field engineers on site
+      - generic [ref=f12e40]:
+        - heading "Operating Principles" [level=2] [ref=f12e42]
+        - generic [ref=f12e43]:
+          - generic [ref=f12e45]:
+            - heading "Direct control of equipment" [level=3] [ref=f12e46]
+            - paragraph [ref=f12e47]: We own, maintain, and dispatch our heavy machinery fleet directly. On-site technical workshops and mobile field mechanics handle repairs immediately, keeping operations on schedule.
+          - generic [ref=f12e49]:
+            - heading "Local employment and technical training" [level=3] [ref=f12e50]
+            - paragraph [ref=f12e51]: We invest in local workforce capacity. Over 90% of our on-site personnel and technical teams are recruited and trained within the sovereign jurisdictions where we operate.
+          - generic [ref=f12e53]:
+            - heading "Measured, reported operational results" [level=3] [ref=f12e54]
+            - paragraph [ref=f12e55]: We track operational progress through verified metric tonnes extracted, kilometers of track ballasted, and machine operating hours logged without lost-time safety incidents.
+          - generic [ref=f12e57]:
+            - heading "Site restoration and watershed protection" [level=3] [ref=f12e58]
+            - paragraph [ref=f12e59]: We integrate concurrent backfilling, topsoil preservation, and engineered drainage into active extraction plans to stabilize land contours and protect local hydrological systems.
+      - generic [ref=f12e61]:
+        - heading "What Sets Us Apart" [level=2] [ref=f12e63]
+        - generic [ref=f12e64]:
+          - generic [ref=f12e66]:
+            - generic [ref=f12e67]:
+              - generic "450+" [ref=f12e70]:
+                - generic [ref=f12e71]: "0"
+                - generic [ref=f12e72]: +
+              - generic [ref=f12e73]: Heavy Equipment Units
+            - heading "100% Directly Owned Fleet" [level=3] [ref=f12e74]
+            - paragraph [ref=f12e75]: We own and operate our hydraulic excavators, rigid dump trucks, and ballast equipment directly, avoiding third-party rental delays.
+          - generic [ref=f12e77]:
+            - generic [ref=f12e78]:
+              - generic "14" [ref=f12e81]: "0"
+              - generic [ref=f12e83]: Industrial Facilities
+            - heading "EPC Engineering Plants" [level=3] [ref=f12e84]
+            - paragraph [ref=f12e85]: Our teams assemble turnkey processing plants, modular jaw crushing stations, and power control centers in-house.
+          - generic [ref=f12e87]:
+            - generic [ref=f12e88]:
+              - generic "1140 km" [ref=f12e91]:
+                - generic [ref=f12e92]: "0"
+                - generic [ref=f12e93]: km
+              - generic [ref=f12e94]: Corridors Maintained
+            - heading "Heavy-Haul Rail Competency" [level=3] [ref=f12e95]
+            - paragraph [ref=f12e96]: We rehabilitate and operate specialized 32-tonne axle-load railway tracks to move extraction volume to maritime ports.
+          - generic [ref=f12e98]:
+            - generic [ref=f12e99]:
+              - generic "0.12" [ref=f12e102]: "0.00"
+              - generic [ref=f12e104]: LTIFR Safety Rating
+            - heading "Safety Governance" [level=3] [ref=f12e105]
+            - paragraph [ref=f12e106]: Operational sites follow ISO 45001 standards with regular supervisor briefings and comprehensive safety audits.
+          - generic [ref=f12e108]:
+            - generic [ref=f12e109]:
+              - generic "35000 m²" [ref=f12e112]:
+                - generic [ref=f12e113]: "0"
+                - generic [ref=f12e114]: m²
+              - generic [ref=f12e115]: Rebuild Workshops
+            - heading "Regional Rebuild Base" [level=3] [ref=f12e116]
+            - paragraph [ref=f12e117]: Central rebuild and powertrain overhaul workshops in Bamako support operations and maintain fleet availability at 94%+.
+          - generic [ref=f12e119]:
+            - generic [ref=f12e120]:
+              - generic "12" [ref=f12e123]: "0"
+              - generic [ref=f12e125]: Active Jurisdictions
+            - heading "Pan-African Footprint" [level=3] [ref=f12e126]
+            - paragraph [ref=f12e127]: We maintain working relationships with national resource ministries, port authorities, and local communities established over 30+ years.
+      - generic [ref=f12e129]:
+        - generic [ref=f12e130]:
+          - heading "How We Work" [level=2] [ref=f12e131]
+          - paragraph [ref=f12e132]: A systematic four-stage execution framework governing geological validation, logistics mobilization, continuous extraction, and final delivery.
+        - generic [ref=f12e133]:
+          - generic [ref=f12e134]:
+            - generic [ref=f12e135]: Operational Execution Framework
+            - generic [ref=f12e138]:
+              - button "01 ASSESS →" [ref=f12e139] [cursor=pointer]:
+                - generic [ref=f12e140]: "01"
+                - generic [ref=f12e141]: ASSESS
+                - generic [ref=f12e142]: →
+              - button "02 MOBILISE →" [ref=f12e143] [cursor=pointer]:
+                - generic [ref=f12e144]: "02"
+                - generic [ref=f12e145]: MOBILISE
+                - generic [ref=f12e146]: →
+              - button "03 EXECUTE →" [ref=f12e147] [cursor=pointer]:
+                - generic [ref=f12e148]: "03"
+                - generic [ref=f12e149]: EXECUTE
+                - generic [ref=f12e150]: →
+              - button "04 DELIVER" [ref=f12e151] [cursor=pointer]:
+                - generic [ref=f12e152]: "04"
+                - generic [ref=f12e153]: DELIVER
+          - generic [ref=f12e154]:
+            - button "01 / 04 Active Stage ASSESS Geological validation, site survey, and deposit feasibility scoping. Operational Scope Comprehensive geophysical core logging, environmental impact assessments, and pit bench geometry mapping prior to capital expenditure." [ref=f12e155] [cursor=pointer]:
+              - generic [ref=f12e157]:
+                - generic [ref=f12e158]:
+                  - generic [ref=f12e159]:
+                    - generic [ref=f12e160]: "01"
+                    - generic [ref=f12e161]: / 04
+                  - generic [ref=f12e162]: Active Stage
+                - heading "ASSESS" [level=3] [ref=f12e165]
+                - paragraph [ref=f12e166]: Geological validation, site survey, and deposit feasibility scoping.
+              - generic [ref=f12e168]:
+                - generic [ref=f12e169]: Operational Scope
+                - paragraph [ref=f12e170]: Comprehensive geophysical core logging, environmental impact assessments, and pit bench geometry mapping prior to capital expenditure.
+            - button "02 / 04 Phase 02 MOBILISE Fleet deployment, logistics planning, and local workforce onboarding. Operational Scope Heavy excavation equipment and crushing plant modules transported through secure logistics corridors with on-site technician deployment." [ref=f12e171] [cursor=pointer]:
+              - generic [ref=f12e173]:
+                - generic [ref=f12e174]:
+                  - generic [ref=f12e175]:
+                    - generic [ref=f12e176]: "02"
+                    - generic [ref=f12e177]: / 04
+                  - generic [ref=f12e178]: Phase 02
+                - heading "MOBILISE" [level=3] [ref=f12e180]
+                - paragraph [ref=f12e181]: Fleet deployment, logistics planning, and local workforce onboarding.
+              - generic [ref=f12e183]:
+                - generic [ref=f12e184]: Operational Scope
+                - paragraph [ref=f12e185]: Heavy excavation equipment and crushing plant modules transported through secure logistics corridors with on-site technician deployment.
+            - button "03 / 04 Phase 03 EXECUTE Round-the-clock extraction, civil construction, or plant commissioning. Operational Scope Disciplined continuous mining operations, grade control, ballast laying, and mechanical assembly maintaining strict LTIFR safety protocols." [ref=f12e186] [cursor=pointer]:
+              - generic [ref=f12e188]:
+                - generic [ref=f12e189]:
+                  - generic [ref=f12e190]:
+                    - generic [ref=f12e191]: "03"
+                    - generic [ref=f12e192]: / 04
+                  - generic [ref=f12e193]: Phase 03
+                - heading "EXECUTE" [level=3] [ref=f12e195]
+                - paragraph [ref=f12e196]: Round-the-clock extraction, civil construction, or plant commissioning.
+              - generic [ref=f12e198]:
+                - generic [ref=f12e199]: Operational Scope
+                - paragraph [ref=f12e200]: Disciplined continuous mining operations, grade control, ballast laying, and mechanical assembly maintaining strict LTIFR safety protocols.
+            - button "04 / 04 Phase 04 DELIVER Tonnage targets met, site restoration, and handover documentation. Operational Scope Direct mineral transport to deep-water ports, client consignment sign-off, concurrent land backfilling, and topsoil restoration." [ref=f12e201] [cursor=pointer]:
+              - generic [ref=f12e203]:
+                - generic [ref=f12e204]:
+                  - generic [ref=f12e205]:
+                    - generic [ref=f12e206]: "04"
+                    - generic [ref=f12e207]: / 04
+                  - generic [ref=f12e208]: Phase 04
+                - heading "DELIVER" [level=3] [ref=f12e210]
+                - paragraph [ref=f12e211]: Tonnage targets met, site restoration, and handover documentation.
+              - generic [ref=f12e213]:
+                - generic [ref=f12e214]: Operational Scope
+                - paragraph [ref=f12e215]: Direct mineral transport to deep-water ports, client consignment sign-off, concurrent land backfilling, and topsoil restoration.
+      - region "Historical Milestones Timeline" [ref=f12e216]:
+        - generic [ref=f12e217]:
+          - generic [ref=f12e218]:
+            - generic [ref=f12e219]:
+              - heading "Our 30+ Year Story" [level=2] [ref=f12e220]
+              - paragraph [ref=f12e221]: From foundational commodity trade in 1994 to heavy extraction concessions, railway corridors, and international operations.
+            - generic [ref=f12e222]:
+              - generic [ref=f12e223]: Era 01 / 07
+              - button "Previous milestone" [disabled] [ref=f12e224]
+              - button "Next milestone" [ref=f12e227] [cursor=pointer]
+          - generic [ref=f12e233]:
+            - button "Milestone year 1994" [ref=f12e234] [cursor=pointer]:
+              - generic [ref=f12e235]: "1994"
+            - button "Milestone year 2001" [ref=f12e237] [cursor=pointer]:
+              - generic [ref=f12e238]: "2001"
+            - button "Milestone year 2007" [ref=f12e240] [cursor=pointer]:
+              - generic [ref=f12e241]: "2007"
+            - button "Milestone year 2013" [ref=f12e243] [cursor=pointer]:
+              - generic [ref=f12e244]: "2013"
+            - button "Milestone year 2018" [ref=f12e246] [cursor=pointer]:
+              - generic [ref=f12e247]: "2018"
+            - button "Milestone year 2022" [ref=f12e249] [cursor=pointer]:
+              - generic [ref=f12e250]: "2022"
+            - button "Milestone year 2026" [ref=f12e252] [cursor=pointer]:
+              - generic [ref=f12e253]: "2026"
+          - generic [ref=f12e256]:
+            - generic [ref=f12e258]:
+              - img "Establishment & International Commodity Trade" [ref=f12e260]
+              - generic [ref=f12e261]:
+                - generic [ref=f12e262]:
+                  - generic [ref=f12e263]: Operational Milestone 01
+                  - generic [ref=f12e264]: "1994"
+                  - generic [ref=f12e265]: Corporate Era 1994
+                - generic [ref=f12e266]:
+                  - heading "Establishment & International Commodity Trade" [level=3] [ref=f12e267]
+                  - paragraph [ref=f12e268]: Founded by Muhammed Farooghuddin, developing international mineral trading and heavy industrial equipment supply channels across the Middle East, Asia, and Africa.
+                  - generic [ref=f12e269]:
+                    - generic [ref=f12e270]: Fiza Engineering Corporation
+                    - generic [ref=f12e271]: Verified Historical Record
+            - generic [ref=f12e273]:
+              - img "Heavy Fleet Equipment Services" [ref=f12e275]
+              - generic [ref=f12e276]:
+                - generic [ref=f12e277]:
+                  - generic [ref=f12e278]: Operational Milestone 02
+                  - generic [ref=f12e279]: "2001"
+                  - generic [ref=f12e280]: Corporate Era 2001
+                - generic [ref=f12e281]:
+                  - heading "Heavy Fleet Equipment Services" [level=3] [ref=f12e282]
+                  - paragraph [ref=f12e283]: Expanded direct operations with heavy earthmoving fleet deployment supporting industrial civil foundations and mining logistics.
+                  - generic [ref=f12e284]:
+                    - generic [ref=f12e285]: Fiza Engineering Corporation
+                    - generic [ref=f12e286]: Verified Historical Record
+            - generic [ref=f12e288]:
+              - img "Open-Pit Mining Concessions" [ref=f12e290]
+              - generic [ref=f12e291]:
+                - generic [ref=f12e292]:
+                  - generic [ref=f12e293]: Operational Milestone 03
+                  - generic [ref=f12e294]: "2007"
+                  - generic [ref=f12e295]: Corporate Era 2007
+                - generic [ref=f12e296]:
+                  - heading "Open-Pit Mining Concessions" [level=3] [ref=f12e297]
+                  - paragraph [ref=f12e298]: Awarded multi-year overburden stripping concessions in Mali, establishing on-site rebuild machine workshops.
+                  - generic [ref=f12e299]:
+                    - generic [ref=f12e300]: Fiza Engineering Corporation
+                    - generic [ref=f12e301]: Verified Historical Record
+            - generic [ref=f12e303]:
+              - img "Turnkey Industrial Plants Division" [ref=f12e305]
+              - generic [ref=f12e306]:
+                - generic [ref=f12e307]:
+                  - generic [ref=f12e308]: Operational Milestone 04
+                  - generic [ref=f12e309]: "2013"
+                  - generic [ref=f12e310]: Corporate Era 2013
+                - generic [ref=f12e311]:
+                  - heading "Turnkey Industrial Plants Division" [level=3] [ref=f12e312]
+                  - paragraph [ref=f12e313]: Commissioned automated primary crushing circuits and expanded into Central Africa and the DRC copperbelt.
+                  - generic [ref=f12e314]:
+                    - generic [ref=f12e315]: Fiza Engineering Corporation
+                    - generic [ref=f12e316]: Verified Historical Record
+            - generic [ref=f12e318]:
+              - img "Direct Mineral Trading Corridors" [ref=f12e320]
+              - generic [ref=f12e321]:
+                - generic [ref=f12e322]:
+                  - generic [ref=f12e323]: Operational Milestone 05
+                  - generic [ref=f12e324]: "2018"
+                  - generic [ref=f12e325]: Corporate Era 2018
+                - generic [ref=f12e326]:
+                  - heading "Direct Mineral Trading Corridors" [level=3] [ref=f12e327]
+                  - paragraph [ref=f12e328]: Structured direct off-take agreements for bauxite, high-grade hematite iron ore, and cathode copper to global markets.
+                  - generic [ref=f12e329]:
+                    - generic [ref=f12e330]: Fiza Engineering Corporation
+                    - generic [ref=f12e331]: Verified Historical Record
+            - generic [ref=f12e333]:
+              - img "Heavy-Haul Rail Infrastructure" [ref=f12e335]
+              - generic [ref=f12e336]:
+                - generic [ref=f12e337]:
+                  - generic [ref=f12e338]: Operational Milestone 06
+                  - generic [ref=f12e339]: "2022"
+                  - generic [ref=f12e340]: Corporate Era 2022
+                - generic [ref=f12e341]:
+                  - heading "Heavy-Haul Rail Infrastructure" [level=3] [ref=f12e342]
+                  - paragraph [ref=f12e343]: Executed railway track renewal and heavy-haul rolling stock operations across specialized mineral corridors.
+                  - generic [ref=f12e344]:
+                    - generic [ref=f12e345]: Fiza Engineering Corporation
+                    - generic [ref=f12e346]: Verified Historical Record
+            - generic [ref=f12e348]:
+              - img "Operations across 12 countries" [ref=f12e350]
+              - generic [ref=f12e351]:
+                - generic [ref=f12e352]:
+                  - generic [ref=f12e353]: Operational Milestone 07
+                  - generic [ref=f12e354]: "2026"
+                  - generic [ref=f12e355]: Corporate Era 2026
+                - generic [ref=f12e356]:
+                  - heading "Operations across 12 countries" [level=3] [ref=f12e357]
+                  - paragraph [ref=f12e358]: Operating mining, civil, rail, and agro-industrial infrastructure projects across 12 countries on 4 continents.
+                  - generic [ref=f12e359]:
+                    - generic [ref=f12e360]: Fiza Engineering Corporation
+                    - generic [ref=f12e361]: Verified Historical Record
+      - generic [ref=f12e363]:
+        - heading "Corporate Leadership" [level=2] [ref=f12e365]
+        - generic [ref=f12e367]:
+          - img "Official portrait monogram for Muhammed Farooghuddin" [ref=f12e370]:
+            - generic [ref=f12e371]: MF
+            - generic [ref=f12e373]: Muhammed Farooghuddin
+            - generic [ref=f12e374]: Founder & Chief Executive Officer
+          - generic [ref=f12e375]:
+            - heading "Muhammed Farooghuddin" [level=3] [ref=f12e376]
+            - generic [ref=f12e377]: Founder & Chief Executive Officer
+            - generic [ref=f12e378]:
+              - paragraph [ref=f12e379]: India-born and Dubai-based, with more than four decades in international business, mineral trading and industrial development. Under his leadership, Fiza has expanded from an equipment trading business into a multidisciplinary industrial enterprise operating across Africa, Asia, and the Middle East.
+              - paragraph [ref=f12e380]: Under his governance, Fiza Engineering Corporation has structured direct extraction contracts, built all-weather arterial haul corridors, and established sovereign mineral off-take partnerships across Africa, Asia, and the Middle East.
+            - generic [ref=f12e381]:
+              - generic [ref=f12e382]: "Leadership Focus:"
+              - generic [ref=f12e383]: Direct Equipment Ownership & Safe Corridor Execution
+          - blockquote [ref=f12e385]:
+            - paragraph [ref=f12e386]: “Our purpose is to build partnerships that strengthen local capability, create lasting value and help ambitious projects move forward.”
+            - generic [ref=f12e387]: — Muhammed Farooghuddin
+      - generic [ref=f12e389]:
+        - generic [ref=f12e390]:
+          - heading "Global Presence & Offices" [level=2] [ref=f12e391]
+          - paragraph [ref=f12e392]: Direct headquarters and regional operations depots coordinating active mining concessions, heavy equipment workshops, and freight rail logistics across Africa and the Middle East.
+        - generic [ref=f12e394]:
+          - generic [ref=f12e395]:
+            - generic [ref=f12e396]:
+              - generic [ref=f12e397]: Geographic Operations Map
+              - generic [ref=f12e398]: 1 of 4 Hubs
+            - generic [ref=f12e401]:
+              - button "Zoom in" [ref=f12e402] [cursor=pointer]
+              - button "Zoom out" [ref=f12e404] [cursor=pointer]
+              - button "Fit all locations" [ref=f12e406] [cursor=pointer]
+            - generic [ref=f12e410]:
+              - generic [ref=f12e411]:
+                - button "Dubai" [ref=f12e412] [cursor=pointer]
+                - button "Bamako" [ref=f12e413] [cursor=pointer]
+                - button "Kinshasa & Kolwezi" [ref=f12e414] [cursor=pointer]
+                - button "Johannesburg" [ref=f12e415] [cursor=pointer]
+              - generic [ref=f12e416]:
+                - button "Previous office" [ref=f12e417] [cursor=pointer]
+                - button "Next office" [ref=f12e420] [cursor=pointer]
+          - generic [ref=f12e423]:
+            - generic [ref=f12e424]:
+              - generic [ref=f12e425]:
+                - generic [ref=f12e426]: United Arab Emirates
+                - generic [ref=f12e427]: Global Headquarters
+              - heading "Dubai" [level=3] [ref=f12e428]
+              - paragraph [ref=f12e429]: Corporate Headquarters & International Mineral Trading Hub
+              - generic [ref=f12e430]:
+                - generic [ref=f12e435]:
+                  - generic [ref=f12e436]: Physical Address
+                  - generic [ref=f12e437]: DIFC Gate Precinct, Building 4, Level 7, Dubai
+                - generic [ref=f12e441]:
+                  - generic [ref=f12e442]: Direct Operations Line
+                  - link "+971 4 362 8800" [ref=f12e443] [cursor=pointer]:
+                    - /url: tel:+97143628800
+                - generic [ref=f12e448]:
+                  - generic [ref=f12e449]: Direct Dispatch Email
+                  - link "info@fizaengineering.com" [ref=f12e450] [cursor=pointer]:
+                    - /url: mailto:info@fizaengineering.com
+            - generic [ref=f12e451]:
+              - link "Open in Map" [ref=f12e452] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/?api=1&query=DIFC+Gate+Precinct+Dubai+UAE
+              - link "Contact Office" [ref=f12e458] [cursor=pointer]:
+                - /url: /contact
+  - contentinfo [ref=f12e459]:
+    - generic [ref=f12e460]:
+      - generic [ref=f12e461]:
+        - generic [ref=f12e462]:
+          - link "FIZA" [ref=f12e463] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f12e466]: "|"
+          - generic [ref=f12e467]: Heavy Engineering, Mining & Rail Infrastructure
+        - navigation [ref=f12e468]:
+          - link "Company" [ref=f12e469] [cursor=pointer]:
+            - /url: /company
+          - link "Services" [ref=f12e470] [cursor=pointer]:
+            - /url: /capabilities
+          - link "Projects" [ref=f12e471] [cursor=pointer]:
+            - /url: /projects
+          - link "Fleet" [ref=f12e472] [cursor=pointer]:
+            - /url: /products
+          - link "Newsroom" [ref=f12e473] [cursor=pointer]:
+            - /url: /news
+          - link "Contact" [ref=f12e474] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=f12e475]:
+        - generic [ref=f12e476]:
+          - generic [ref=f12e477]:
+            - text: "Dubai HQ:"
+            - link "+971 4 362 8800" [ref=f12e478] [cursor=pointer]:
+              - /url: tel:+97143628800
+          - generic [ref=f12e479]: ·
+          - link "info@fizaengineering.com" [ref=f12e481] [cursor=pointer]:
+            - /url: mailto:info@fizaengineering.com
+          - generic [ref=f12e482]: ·
+          - generic [ref=f12e483]: DIFC Gate Precinct, Dubai · Africa
+        - generic [ref=f12e484]:
+          - generic [ref=f12e485]: © 2026 Fiza Engineering Corporation.
+          - link "Privacy" [ref=f12e486] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=f12e487] [cursor=pointer]:
+            - /url: /terms
+          - link "Accreditations" [ref=f12e488] [cursor=pointer]:
+            - /url: /achievements

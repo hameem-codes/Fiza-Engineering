@@ -1,247 +1,249 @@
 "use client";
 
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchParams, useRouter } from "next/navigation";
-import {
-  NEWS_ARTICLES,
-  NEWS_CATEGORIES,
-  getVisibleArticles,
-  NewsArticle,
-} from "@/lib/news";
+import { getVisibleArticles } from "@/lib/news";
+import { EXTERNAL_COVERAGE, ExternalMention } from "@/lib/externalCoverage";
 import { formatDate } from "@/lib/utils";
+import { ArrowRight, ExternalLink, Linkedin, Instagram, Twitter, Newspaper, Landmark } from "lucide-react";
 
-function normalizeTopic(param: string | null): string {
-  if (!param) return "ALL";
-  const normalized = param.toUpperCase().replace(/[+_-]/g, " ").trim();
-  const match = NEWS_CATEGORIES.find(
-    (c) => c.toUpperCase() === normalized
-  );
-  return match || "ALL";
+function SourceIcon({ source }: { source: ExternalMention["source"] }) {
+  switch (source) {
+    case "LinkedIn":
+      return <Linkedin size={14} className="text-[#0A66C2]" />;
+    case "Instagram":
+      return <Instagram size={14} className="text-[#E4405F]" />;
+    case "X / Twitter":
+      return <Twitter size={14} className="text-[#1DA1F2]" />;
+    case "Ministry of Mines":
+      return <Landmark size={14} className="text-oxide-red" />;
+    case "Industry Journal":
+    default:
+      return <Newspaper size={14} className="text-earth-black" />;
+  }
 }
 
 function NewsContent() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const topicParam = searchParams?.get("topic") ?? null;
-  const [selectedTopic, setSelectedTopic] = useState("ALL");
-
-  useEffect(() => {
-    setSelectedTopic(normalizeTopic(topicParam));
-  }, [topicParam]);
-
-  const handleTopicChange = (topic: string) => {
-    setSelectedTopic(topic);
-    if (topic === "ALL") {
-      router.push("/news", { scroll: false });
-    } else {
-      router.push(`/news?topic=${encodeURIComponent(topic)}`, { scroll: false });
-    }
-  };
-
-  const allVisible = getVisibleArticles();
-
-  const filteredArticles = allVisible.filter((a) => {
-    if (selectedTopic === "ALL") return true;
-    return a.category === selectedTopic;
-  });
-
-  // Calculate counts per topic
-  const getTopicCount = (topic: string) => {
-    if (topic === "ALL") return allVisible.length;
-    return allVisible.filter((a) => a.category === topic).length;
-  };
-
-  const featured = filteredArticles[0];
-  const remaining = filteredArticles.slice(1);
+  const officialArticles = getVisibleArticles();
+  const externalMentions = EXTERNAL_COVERAGE;
 
   return (
-    <div className="w-full pt-[72px]">
-      {/* Editorial Header with Integrated Industrial Imagery */}
-      <section className="relative bg-iron-white py-20 md:py-24 border-b border-slab-grey overflow-hidden">
-        {/* Background Industrial Image Integration */}
-        <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
-          <Image
-            src="/images/capabilities/railway-solutions.jpg"
-            alt="Fiza Engineering heavy-haul rail logistics, locomotives, and mineral transport operations"
-            fill
-            priority
-            sizes="100vw"
-            className="img-cover object-center lg:object-right opacity-75 lg:opacity-90 mix-blend-multiply transition-opacity duration-1000 ease-in-out motion-safe:animate-ken-burns-gentle"
-          />
-          {/* Subtle Industrial Mesh Texture */}
-          <div
-            className="absolute inset-0 opacity-15 pointer-events-none"
-            style={{
-              backgroundImage: "radial-gradient(rgba(26, 26, 24, 0.25) 1px, transparent 1px)",
-              backgroundSize: "28px 28px",
-            }}
-          />
-          {/* Editorial Gradient Blend: Guarantees 100% Text Readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-iron-white via-iron-white/65 sm:via-iron-white/40 to-iron-white/5 lg:to-transparent transition-opacity duration-1000 ease-in-out" />
-          <div className="absolute inset-0 bg-gradient-to-t from-iron-white/55 via-transparent to-iron-white/15 transition-opacity duration-1000 ease-in-out" />
-        </div>
+    <div className="w-full">
+      {/* 1. Hero: Rich Blended Photography with Crystal Clear Contrast (Fixes 2 PDF Page 3) */}
+      <section className="relative w-full h-[62vh] min-h-[500px] flex items-end overflow-hidden bg-coal-dark">
+        <Image
+          src="/images/capabilities/railway-solutions.jpg"
+          alt="Fiza Engineering heavy-haul rail logistics, locomotives, and mineral transport operations"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
 
-        <div className="relative z-10 max-w-content mx-auto px-6 md:px-12">
-          <span className="text-label text-oxide-red font-sans uppercase tracking-wide block mb-3 font-semibold">
-            News
-          </span>
-          <h1 className="text-display-lg sm:text-[3.5rem] md:text-display-xl font-medium text-earth-black leading-[0.95] mb-6">
-            News
-          </h1>
-          <p className="text-body-lg text-quarry-grey max-w-2xl leading-relaxed">
-            Project announcements, fleet mobilizations, and operational updates from Fiza operations across Africa.
-          </p>
+        {/* Directional Scrim Overlay: Visible heavy-haul railway while guaranteeing 100% white text readability */}
+        <div 
+          className="absolute inset-0 z-[1] pointer-events-none"
+          style={{
+            background: `
+              linear-gradient(to right, rgba(14, 14, 12, 0.92) 0%, rgba(14, 14, 12, 0.80) 45%, rgba(14, 14, 12, 0.35) 75%, rgba(14, 14, 12, 0.15) 100%),
+              linear-gradient(to top, rgba(14, 14, 12, 0.95) 0%, rgba(14, 14, 12, 0.3) 50%, rgba(14, 14, 12, 0.5) 100%)
+            `
+          }}
+        />
 
-          {/* Topic Chips with Article Counts */}
-          <div className="flex flex-wrap items-center gap-3 mt-10 pt-6 border-t border-slab-grey">
-            <span className="text-label font-sans text-earth-black uppercase tracking-wide mr-2 font-bold text-xs">
-              Topic:
-            </span>
-            {NEWS_CATEGORIES.map((topic) => {
-              const count = getTopicCount(topic);
-              return (
-                <button
-                  key={topic}
-                  onClick={() => handleTopicChange(topic)}
-                  className={`tag cursor-pointer ${
-                    selectedTopic === topic
-                      ? "tag--active !bg-earth-black !text-iron-white"
-                      : "hover:bg-earth-black hover:text-iron-white"
-                  }`}
-                >
-                  {topic} ({count})
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="mt-4 text-xs font-sans text-quarry-grey font-medium">
-            Showing <span className="font-semibold text-earth-black">{filteredArticles.length}</span> of {allVisible.length} articles
+        <div className="relative z-10 max-w-content mx-auto w-full px-6 md:px-12 pb-14 md:pb-18">
+          <div className="max-w-3xl">
+            <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl font-medium text-white leading-[1.08] mb-4">
+              News & Field Dispatches
+            </h1>
+            <p className="text-base sm:text-lg text-white/95 max-w-2xl leading-relaxed font-normal">
+              Official company releases, heavy infrastructure progress reports, and external verified media coverage across African mining corridors.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Main Content Area */}
-      <section className="w-full bg-[#EBE8E0] py-16 md:py-24">
-        <div className="max-w-content mx-auto px-6 md:px-12">
-          {filteredArticles.length === 0 ? (
-            <div className="text-center py-20 bg-iron-white border border-slab-grey p-12 max-w-lg mx-auto font-sans">
-              <h3 className="text-heading-3 font-medium text-earth-black mb-2">No articles found</h3>
-              <p className="text-quarry-grey text-xs mb-6">
-                No published articles match the selected topic.
-              </p>
-              <button
-                onClick={() => handleTopicChange("ALL")}
-                className="btn-primary text-xs py-2 px-5"
-              >
-                Clear filter
-              </button>
-            </div>
-          ) : (
-            <div className="space-y-12">
-              {/* Featured Story */}
-              {featured && (
-                <Link
-                  href={`/news/${featured.slug}`}
-                  className="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-iron-white border border-slab-grey p-6 md:p-10 hover:border-earth-black transition-colors"
-                >
-                  <div className="lg:col-span-7 relative aspect-[16/10] w-full overflow-hidden bg-slab-grey border border-slab-grey">
-                    <Image
-                      src={featured.image}
-                      alt={featured.imageAlt || featured.title}
-                      fill
-                      priority
-                      className="img-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </div>
+      {/* COVERAGE SCOPE COMPLETELY REMOVED AS EXPLICITLY DIRECTED BY FIXES 2 PDF PAGE 3 ("Remove that coverage scope things all") */}
 
-                  <div className="lg:col-span-5 flex flex-col justify-between h-full">
+      {/* 2. Differentiated Two-Column News Layout: Official Fiza News on LEFT (7 cols), External Coverage on RIGHT (5 cols) (PDF Page 4) */}
+      <section className="w-full bg-[#F4F2EC] py-16 md:py-24 border-b border-slab-grey">
+        <div className="max-w-content mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
+            
+            {/* LEFT / PRIMARY AREA (7 cols): Official Fiza Corporate Dispatches */}
+            <div className="lg:col-span-7 space-y-8">
+              <div className="border-b border-slab-grey pb-4 flex items-center justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2 h-2 bg-oxide-red inline-block" />
+                    <span className="font-sans text-xs uppercase tracking-wider text-oxide-red font-semibold">
+                      Corporate Announcements & Operations
+                    </span>
+                  </div>
+                  <h2 className="font-heading text-2xl sm:text-3xl font-medium text-earth-black">
+                    Official Fiza News
+                  </h2>
+                </div>
+                <span className="font-sans text-xs text-quarry-grey font-medium">
+                  {officialArticles.length} Dispatches
+                </span>
+              </div>
+
+              <div className="space-y-8">
+                {officialArticles.map((article) => (
+                  <article
+                    key={article.slug}
+                    className="bg-iron-white border border-slab-grey p-7 md:p-8 transition-all duration-300 hover:border-earth-black hover:shadow-md group flex flex-col justify-between"
+                  >
                     <div>
-                      <div className="flex flex-wrap items-center gap-2 text-xs font-sans text-quarry-grey mb-3 font-medium">
-                        <span className="bg-earth-black text-iron-white px-2 py-0.5 uppercase tracking-wide text-[10px] font-semibold">
-                          {featured.category}
-                        </span>
-                        <span>·</span>
-                        <span>{formatDate(featured.date)}</span>
-                        <span>·</span>
-                        <span>{featured.readingTime}</span>
+                      {/* Authentic Industrial Photography Banner */}
+                      <div className="relative aspect-[16/10] w-full overflow-hidden bg-slab-grey/40 border border-slab-grey/60 mb-6">
+                        <Image
+                          src={article.image}
+                          alt={article.imageAlt || article.title}
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 55vw"
+                          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        />
+                        <div className="absolute top-3.5 left-3.5 bg-[#141412]/90 text-iron-white text-xs font-sans uppercase tracking-wider px-3 py-1 border border-white/10 font-semibold backdrop-blur-sm">
+                          {article.category}
+                        </div>
                       </div>
 
-                      <h2 className="text-display-lg sm:text-[2rem] font-medium text-earth-black leading-[1.1] group-hover:text-oxide-red transition-colors mb-4">
-                        {featured.title}
-                      </h2>
+                      {/* Article Metadata */}
+                      <div className="flex items-center gap-2.5 text-xs font-sans text-quarry-grey mb-3 font-medium">
+                        <span>{formatDate(article.date)}</span>
+                        <span>·</span>
+                        <span>{article.readingTime}</span>
+                        <span>·</span>
+                        <span className="text-oxide-red font-semibold uppercase tracking-wider text-[11px]">Official Fiza Dispatch</span>
+                      </div>
 
-                      <p className="text-body text-quarry-grey leading-relaxed line-clamp-4 mb-4">
-                        {featured.summary}
+                      <h3 className="font-heading text-2xl sm:text-[1.75rem] font-medium text-earth-black group-hover:text-oxide-red transition-colors mb-3 leading-snug">
+                        <Link href={`/news/${article.slug}`}>
+                          {article.title}
+                        </Link>
+                      </h3>
+
+                      <p className="text-sm font-sans text-quarry-grey leading-relaxed mb-6 font-normal">
+                        {article.summary}
                       </p>
 
-                      <div className="text-xs font-sans text-quarry-grey mb-6">
-                        By <span className="font-semibold text-earth-black">{featured.author.name}</span>, {featured.author.role}
+                      <div className="text-xs font-sans text-quarry-grey mb-6 pt-3 border-t border-slab-grey/40">
+                        Authored by <span className="font-semibold text-earth-black">{article.author.name}</span>, {article.author.role}
                       </div>
                     </div>
 
-                    <div className="pt-4 border-t border-slab-grey">
-                      <span className="text-label font-bold text-oxide-red uppercase tracking-wide font-sans inline-flex items-center gap-1">
-                        Read article →
+                    <div className="pt-4 border-t border-slab-grey/60 flex items-center justify-between">
+                      <Link
+                        href={`/news/${article.slug}`}
+                        className="font-sans text-xs font-semibold uppercase tracking-wider text-earth-black group-hover:text-oxide-red inline-flex items-center gap-2 transition-colors group/cta"
+                      >
+                        <span>Read Full Dispatch</span>
+                        <ArrowRight size={14} className="transition-transform group-hover/cta:translate-x-1" />
+                      </Link>
+                      <span className="text-[11px] font-sans text-quarry-grey uppercase tracking-wider">
+                        Official Release
                       </span>
                     </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+
+            {/* RIGHT / SECONDARY AREA (5 cols): Verified External Media Coverage & Field Logs */}
+            <div className="lg:col-span-5 space-y-8">
+              <div className="border-b border-slab-grey pb-4 flex items-center justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2 h-2 bg-oxide-red inline-block" />
+                    <span className="font-sans text-xs uppercase tracking-wider text-oxide-red font-semibold">
+                      Public Sector & Verified Media
+                    </span>
                   </div>
-                </Link>
-              )}
+                  <h2 className="font-heading text-2xl sm:text-3xl font-medium text-earth-black">
+                    External Coverage & Field Logs
+                  </h2>
+                </div>
+                <span className="font-sans text-xs text-quarry-grey font-medium">
+                  {externalMentions.length} Mentions
+                </span>
+              </div>
 
-              {/* Remaining Stories Grid */}
-              {remaining.length > 0 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {remaining.map((article) => (
-                    <Link
-                      key={article.slug}
-                      href={`/news/${article.slug}`}
-                      className="group bg-iron-white border border-slab-grey p-6 flex flex-col justify-between hover:border-earth-black transition-colors"
-                    >
-                      <div>
-                        <div className="relative aspect-[16/10] w-full overflow-hidden bg-slab-grey mb-4 border border-slab-grey">
-                          <Image
-                            src={article.image}
-                            alt={article.imageAlt || article.title}
-                            fill
-                            className="img-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                          />
+              <div className="space-y-6">
+                {externalMentions.map((mention) => (
+                  <article
+                    key={mention.id}
+                    className="bg-iron-white border border-slab-grey p-6 transition-all duration-300 hover:border-earth-black hover:shadow-md group flex flex-col justify-between"
+                  >
+                    <div>
+                      {/* Header: Platform Badge, Handle, Date */}
+                      <div className="flex flex-wrap items-center justify-between gap-3 mb-3.5 pb-3 border-b border-slab-grey/40">
+                        <div className="flex items-center gap-2">
+                          <div className="p-1 bg-[#F4F2EC] border border-slab-grey/60 flex items-center justify-center">
+                            <SourceIcon source={mention.source} />
+                          </div>
+                          <span className="font-sans text-xs font-semibold text-earth-black uppercase tracking-wider">
+                            {mention.source}
+                          </span>
                         </div>
-
-                        <div className="flex flex-wrap items-center gap-2 text-xs font-sans text-quarry-grey mb-2 font-medium">
-                          <span className="text-oxide-red font-semibold uppercase tracking-wide">{article.category}</span>
-                          <span>·</span>
-                          <span>{formatDate(article.date)}</span>
-                          <span>·</span>
-                          <span>{article.readingTime}</span>
-                        </div>
-
-                        <h3 className="text-heading-2 font-medium text-earth-black group-hover:text-oxide-red transition-colors mb-3 leading-snug">
-                          {article.title}
-                        </h3>
-
-                        <p className="text-body-sm text-quarry-grey leading-relaxed line-clamp-3 mb-4">
-                          {article.summary}
-                        </p>
-
-                        <div className="text-xs font-sans text-quarry-grey mb-6">
-                          By <span className="font-semibold text-earth-black">{article.author.name}</span>, {article.author.role}
-                        </div>
-                      </div>
-
-                      <div className="pt-4 border-t border-slab-grey">
-                        <span className="text-label font-bold text-earth-black group-hover:text-oxide-red uppercase tracking-wide font-sans inline-flex items-center gap-1 transition-colors">
-                          Read article →
+                        <span className="font-sans text-xs text-quarry-grey font-medium">
+                          {mention.date}
                         </span>
                       </div>
-                    </Link>
-                  ))}
-                </div>
-              )}
+
+                      <div className="font-sans text-xs text-quarry-grey mb-2 font-medium">
+                        {mention.authorOrHandle}
+                      </div>
+
+                      {/* Title & Excerpt */}
+                      <h3 className="font-heading text-lg sm:text-xl font-medium text-earth-black mb-2.5 leading-snug group-hover:text-oxide-red transition-colors">
+                        {mention.title}
+                      </h3>
+
+                      <p className="text-xs font-sans text-quarry-grey leading-relaxed mb-5 font-normal">
+                        {mention.excerpt}
+                      </p>
+
+                      {/* Supporting Real Industrial Photography */}
+                      {mention.image && (
+                        <div className="relative aspect-[16/10] w-full overflow-hidden bg-slab-grey/40 border border-slab-grey/60 mb-5">
+                          <Image
+                            src={mention.image}
+                            alt={mention.imageAlt || mention.title}
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 40vw"
+                            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                          />
+                          <div className="absolute bottom-2.5 left-2.5 bg-[#141412]/90 text-iron-white text-[11px] font-sans uppercase tracking-wider px-2 py-0.5 border border-white/10 font-semibold">
+                            {mention.tag}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Footer: Outbound Link */}
+                    <div className="pt-3.5 border-t border-slab-grey/40 flex items-center justify-between">
+                      <span className="text-[11px] font-sans text-quarry-grey font-medium">
+                        External Reference
+                      </span>
+                      <a
+                        href={mention.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-sans text-xs font-semibold uppercase tracking-wider text-oxide-red hover:underline inline-flex items-center gap-1.5"
+                      >
+                        <span>View Source</span>
+                        <ExternalLink size={12} />
+                      </a>
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
-          )}
+
+          </div>
         </div>
       </section>
     </div>

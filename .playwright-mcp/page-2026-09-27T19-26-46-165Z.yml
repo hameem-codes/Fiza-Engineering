@@ -1,0 +1,129 @@
+- generic [active] [ref=f11e1]:
+  - banner [ref=f11e2]:
+    - link "F FIZA Engineering Corporation" [ref=f11e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f11e4]: F
+      - generic [ref=f11e5]:
+        - generic [ref=f11e6]: FIZA
+        - generic [ref=f11e8]: Engineering Corporation
+    - navigation [ref=f11e9]:
+      - link "Company" [ref=f11e10] [cursor=pointer]:
+        - /url: /company
+      - link "Services" [ref=f11e11] [cursor=pointer]:
+        - /url: /capabilities
+      - link "Projects" [ref=f11e12] [cursor=pointer]:
+        - /url: /projects
+      - link "Products" [ref=f11e13] [cursor=pointer]:
+        - /url: /products
+      - link "Certifications" [ref=f11e15] [cursor=pointer]:
+        - /url: /achievements
+      - link "News" [ref=f11e16] [cursor=pointer]:
+        - /url: /news
+      - link "Contact" [ref=f11e17] [cursor=pointer]:
+        - /url: /contact
+    - link "Get in Touch" [ref=f11e19] [cursor=pointer]:
+      - /url: /contact
+  - main [ref=f11e20]:
+    - generic [ref=f11e755]:
+      - generic [ref=f11e756]:
+        - img "Large commercial grain storage silos and agricultural processing facility in Sikasso, Mali" [ref=f11e757]
+        - generic [ref=f11e758]:
+          - link "← All Projects" [ref=f11e759] [cursor=pointer]:
+            - /url: /projects
+          - generic [ref=f11e760]:
+            - generic [ref=f11e761]: COMPLETED
+            - generic [ref=f11e762]: Mali
+            - generic [ref=f11e766]: 2022 - 2024
+          - heading "Sikasso Grain & Oilseed Industrial Plant" [level=1] [ref=f11e769]
+      - generic [ref=f11e772]:
+        - generic [ref=f11e773]:
+          - generic [ref=f11e774]:
+            - generic [ref=f11e775]: Project Summary
+            - paragraph [ref=f11e776]: Turnkey development of a 60,000-tonne automated silo grain terminal and continuous cottonseed oil solvent extraction plant.
+          - generic [ref=f11e777]:
+            - generic [ref=f11e778]: Key Operational Facts
+            - list [ref=f11e779]:
+              - listitem [ref=f11e780]:
+                - generic [ref=f11e782]: 60,000 tonnes automated silo storage capacity
+              - listitem [ref=f11e783]:
+                - generic [ref=f11e785]: 450 tonnes/day oilseed processing throughput
+              - listitem [ref=f11e786]:
+                - generic [ref=f11e788]: 4MW synchronized diesel-solar power station
+              - listitem [ref=f11e789]:
+                - generic [ref=f11e791]: Supported 14,000 regional agrarian growers
+          - generic [ref=f11e792]:
+            - generic [ref=f11e793]:
+              - generic [ref=f11e794]: Operational Context
+              - paragraph [ref=f11e795]: Extreme ambient dust and heat fluctuations requiring specialized pneumatic conveyance and explosion-proof electrical substations.
+            - generic [ref=f11e796]:
+              - generic [ref=f11e797]: Engineering Delivery
+              - paragraph [ref=f11e798]: Integrated specialized steel silos with automated thermocouple monitoring systems and a 4MW synchronized diesel-solar power station.
+        - complementary [ref=f11e799]:
+          - generic [ref=f11e800]:
+            - generic [ref=f11e801]: Project Data
+            - generic [ref=f11e802]:
+              - generic [ref=f11e803]: Sector
+              - text: Commercial Agriculture
+            - generic [ref=f11e804]:
+              - generic [ref=f11e805]: Country / Location
+              - text: Mali
+            - generic [ref=f11e806]:
+              - generic [ref=f11e807]: Operational Status
+              - text: COMPLETED
+            - generic [ref=f11e808]:
+              - generic [ref=f11e809]: Timeline
+              - text: 2022 - 2024
+            - generic [ref=f11e810]:
+              - generic [ref=f11e811]: Contracting Entity
+              - text: Malian Agro-Industrial Development Board
+          - generic [ref=f11e812]:
+            - generic [ref=f11e813]: Related Service
+            - heading "Commercial Agriculture" [level=4] [ref=f11e819]
+            - link "View service details" [ref=f11e820] [cursor=pointer]:
+              - /url: /capabilities/agriculture
+          - generic [ref=f11e823]:
+            - heading "Project Inquiry" [level=4] [ref=f11e824]
+            - paragraph [ref=f11e825]: Connect with our commercial engineers regarding concession tenders or equipment fleet mobilization.
+            - link "Contact project team →" [ref=f11e826] [cursor=pointer]:
+              - /url: /contact?type=agriculture
+  - contentinfo [ref=f11e213]:
+    - generic [ref=f11e214]:
+      - generic [ref=f11e215]:
+        - generic [ref=f11e216]:
+          - link "FIZA" [ref=f11e217] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f11e220]: "|"
+          - generic [ref=f11e221]: Heavy Engineering, Mining & Rail Infrastructure
+        - navigation [ref=f11e222]:
+          - link "Company" [ref=f11e223] [cursor=pointer]:
+            - /url: /company
+          - link "Services" [ref=f11e224] [cursor=pointer]:
+            - /url: /capabilities
+          - link "Projects" [ref=f11e225] [cursor=pointer]:
+            - /url: /projects
+          - link "Fleet" [ref=f11e226] [cursor=pointer]:
+            - /url: /products
+          - link "Newsroom" [ref=f11e227] [cursor=pointer]:
+            - /url: /news
+          - link "Contact" [ref=f11e228] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=f11e229]:
+        - generic [ref=f11e230]:
+          - generic [ref=f11e231]:
+            - text: "Dubai HQ:"
+            - link "+971 4 362 8800" [ref=f11e232] [cursor=pointer]:
+              - /url: tel:+97143628800
+          - generic [ref=f11e233]: ·
+          - link "info@fizaengineering.com" [ref=f11e235] [cursor=pointer]:
+            - /url: mailto:info@fizaengineering.com
+          - generic [ref=f11e236]: ·
+          - generic [ref=f11e237]: DIFC Gate Precinct, Dubai · Africa
+        - generic [ref=f11e238]:
+          - generic [ref=f11e239]: © 2026 Fiza Engineering Corporation.
+          - link "Privacy" [ref=f11e240] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=f11e241] [cursor=pointer]:
+            - /url: /terms
+          - link "Accreditations" [ref=f11e242] [cursor=pointer]:
+            - /url: /achievements
+  - alert [ref=f11e243]: Sikasso Grain & Oilseed Industrial Plant (Mali) | Fiza Engineering
