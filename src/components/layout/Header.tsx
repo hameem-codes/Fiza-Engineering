@@ -43,13 +43,15 @@ export function Header() {
       >
         {/* Left: Brand Identity Block */}
         <Link href="/" className="flex items-center gap-3.5 group shrink-0">
-          <div className="w-9 h-9 bg-iron-white text-earth-black flex items-center justify-center font-heading font-bold text-xl tracking-tight transition-transform duration-200 group-hover:scale-105 border-b-2 border-oxide-red shadow-sm">
-            F
+          <div className="relative w-9 h-9 bg-[#141412] border border-white/20 flex items-center justify-center font-heading font-bold text-xl tracking-tight text-white transition-transform duration-200 group-hover:scale-105 shadow-sm">
+            <span className="relative inline-block leading-none">
+              F
+              <span className="absolute -bottom-0.5 -right-2 w-1.5 h-1.5 bg-oxide-red" />
+            </span>
           </div>
           <div className="flex flex-col">
-            <span className="font-heading text-[15px] font-bold text-iron-white tracking-[0.14em] uppercase leading-none group-hover:text-oxide-red transition-colors flex items-center gap-1.5">
+            <span className="font-heading text-[15px] font-bold text-white tracking-[0.14em] uppercase leading-none group-hover:text-oxide-red transition-colors">
               FIZA
-              <span className="inline-block w-1.5 h-1.5 bg-oxide-red" />
             </span>
             <span className="text-[9px] font-sans font-medium text-dust-tan tracking-[0.22em] uppercase mt-1">
               Engineering Corporation
@@ -57,7 +59,7 @@ export function Header() {
           </div>
         </Link>
 
-        {/* Desktop Navigation Links — Flat, uncluttered, no dropdowns */}
+        {/* Desktop Navigation Links — High-contrast, guaranteed visible at every stage */}
         <nav className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-7">
           {CONSOLIDATED_NAV.map((link) => {
             const isActive =
@@ -71,8 +73,8 @@ export function Header() {
                 className={cn(
                   "text-[12px] xl:text-[13px] font-medium tracking-[0.04em] uppercase transition-colors duration-200 relative py-1 shrink-0",
                   isActive
-                    ? "text-oxide-red font-semibold"
-                    : "text-white/80 hover:text-white"
+                    ? "!text-oxide-red font-semibold"
+                    : "!text-[#EAE7DF] hover:!text-white"
                 )}
               >
                 {link.label}

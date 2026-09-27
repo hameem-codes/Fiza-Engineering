@@ -14,7 +14,6 @@ export function Footer() {
               <span className="font-heading text-2xl font-semibold tracking-tight uppercase text-earth-black group-hover:text-oxide-red transition-colors">
                 FIZA
               </span>
-              <span className="w-2 h-2 rounded-none bg-oxide-red inline-block" />
             </Link>
             <span className="hidden sm:inline text-slab-grey font-light">|</span>
             <span className="font-sans text-xs uppercase tracking-wider text-quarry-grey font-medium">

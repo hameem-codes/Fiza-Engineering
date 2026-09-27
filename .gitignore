@@ -37,3 +37,6 @@ next-env.d.ts
 # archives
 *.zip
 *.ps1
+
+# test artifacts
+.playwright-mcp
